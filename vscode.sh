@@ -2,15 +2,12 @@
 
 set -eu
 
-echo "Installing vscode extensions..."
+echo "Installing vscode ..."
 
-while true; do
-  if [ -x "$(command -v code)" ]; then
-    break;
-  else
-    read -rep $"Waiting to install Visual Studio Code CLI command! Press any key to continue ..." -n1
-  fi
-done
+if [[ ! -x "$(command -v code)" ]]; then
+  echo "Installing vscode shell extension..."
+  ln -s ~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+fi
 
 code --install-extension EditorConfig.EditorConfig
 code --install-extension arc0re.theme-xcode-midnight
