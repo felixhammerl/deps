@@ -47,7 +47,7 @@ brew tap caskroom/cask
 
 echo "Installing brew casks..."
 
-brew cask install --appdir=~/Application \
+brew cask install --appdir=~/Applications \
   karabiner-elements \
   keycastr \
   vagrant \
