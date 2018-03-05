@@ -16,12 +16,14 @@ brew install \
   ack \
   bash \
   bash-completion \
+  bash-git-prompt \
   chromedriver \
   curl \
   editorconfig \
   ffmpeg \
   figlet \
   fzf \
+  git \
   gnupg \
   gnupg2 \
   grep \
@@ -60,6 +62,7 @@ brew cask install --appdir=~/Application \
   zoomus \
   gimp \
   1password \
+  java \
   docker \
   dropbox \
   iterm2 \
