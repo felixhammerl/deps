@@ -2,6 +2,10 @@
 
 set -eu
 
+echo "Uninstalling old version ..."
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+
 echo "Installing brew..."
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
