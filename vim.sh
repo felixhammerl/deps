@@ -5,6 +5,7 @@ set -eu
 # cleaning .vim folder
 echo "Cleaning .vim folder..."
 rm -rfv ~/.vim
+rm ~/.vimrc
 mkdir -p ~/.vim
 cd ~/.vim/
 
