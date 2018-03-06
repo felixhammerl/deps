@@ -40,6 +40,14 @@ brew install \
   vim \
   wget
 
+echo "Installinging ruby gems..."
+
+gem install \
+  sass \
+  jekyll \
+  kramdown \
+  rouge
+
 echo "Installing brew caskroom"
 
 brew tap caskroom/cask
