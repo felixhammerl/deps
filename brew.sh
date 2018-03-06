@@ -16,7 +16,6 @@ brew install \
   ack \
   bash \
   bash-completion \
-  bash-git-prompt \
   chromedriver \
   curl \
   editorconfig \
