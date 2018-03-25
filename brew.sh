@@ -48,7 +48,7 @@ gem install \
   kramdown \
   rouge
 
-echo "Installing brew caskroom"
+echo "Installing brew casks caskroom"
 
 brew tap caskroom/cask
 
@@ -77,6 +77,25 @@ brew cask install --appdir=/Applications \
   iterm2 \
   vlc \
   postman
+
+echo "Installing fonts caskroom"
+
+brew tap caskroom/fonts
+
+echo "Installing fonts ..."
+
+brew cask install \
+  font-fira-code \
+  font-fira-mono \
+  font-fira-sans \
+  font-source-code-pro \
+  font-open-sans \
+  font-open-sans-condensed \
+  font-roboto \
+  font-roboto-mono \
+  font-roboto-condensed \
+  font-roboto-slab
+
 
 echo "Installing rust..."
 
