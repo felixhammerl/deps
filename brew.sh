@@ -54,7 +54,6 @@ echo "Installing brew casks..."
 
 brew cask install --appdir=/Applications \
   android-file-transfer \
-  cinch \
   karabiner-elements \
   keycastr \
   vagrant \

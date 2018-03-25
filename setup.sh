@@ -9,5 +9,5 @@ set -eu
 ./vscode.sh
 ./git.sh
 
-echo -e "Please install the following software manually: \n\nShush (App Store)\nTicToc (AppStore)"
+echo -e "Please install the following software manually: \n\nCinch (App Store)\nShush (App Store)\nTicToc (AppStore)"
 
