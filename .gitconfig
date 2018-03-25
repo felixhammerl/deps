@@ -1,0 +1,19 @@
+[user]
+    name = Felix Hammerl
+    email = felix.hammerl@gmail.com
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[core]
+    editor = vim
+[credential]
+    helper = osxkeychain
+[push]
+    default = simple
+[pull]
+    rebase = true
+[help]
+    autocorrect = 0

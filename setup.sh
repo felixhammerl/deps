@@ -8,7 +8,7 @@ set -eu
 ./vim.sh 
 ./vscode.sh
 
-echo -e "Please install the following software manually:\n\nCinch (AppStore)\nShush (App Store)\nTicToc (AppStore)\nJDK (Oracle)"
+echo -e "Please install the following software manually: \n\nShush (App Store)\nTicToc (AppStore)"
 
 echo "Please install the following fonts on your system:"
 echo "Open Sans"
