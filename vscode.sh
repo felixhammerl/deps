@@ -21,5 +21,8 @@ code --install-extension eg2.vscode-npm-script
 code --install-extension itryapitsin.Scala
 code --install-extension joshpeng.sublime-babel-vscode
 code --install-extension kalitaalexey.vscode-rust
+code --install-extension vscodevim.vim
+
+cp vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
 echo "Done!"
