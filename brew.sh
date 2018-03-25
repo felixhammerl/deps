@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 echo "Uninstalling old version ..."
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
