@@ -28,6 +28,7 @@ brew install \
   id3lib \
   kubernetes-cli \
   nmap \
+  node \
   openssl \
   sbt \
   scala \
