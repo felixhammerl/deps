@@ -6,7 +6,7 @@ shopt -s histappend
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR=vim
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JAVA_HOME=$(/usr/libexec/java_home -v 9)
 export MAVEN_OPTS="$MAVEN_OPTS -Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m"
 
