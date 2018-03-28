@@ -7,6 +7,7 @@ echo "Cleaning .vim folder..."
 rm -rfv ~/.vim
 rm -f ~/.vimrc
 mkdir -p ~/.vim
+mkdir -p ~/.vim/swap
 
 echo "Setting up .vim folder..."
 git clone git@github.com:felixhammerl/vim.git ~/.vim
