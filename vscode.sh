@@ -4,10 +4,8 @@ set -eu
 
 echo "Installing vscode ..."
 
-if [[ ! -x "$(command -v code)" ]]; then
-  echo "Installing vscode shell extension..."
-  ln -s ~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
-fi
+rm -f /usr/local/bin/code
+ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 code --install-extension EditorConfig.EditorConfig
 code --install-extension arc0re.theme-xcode-midnight
