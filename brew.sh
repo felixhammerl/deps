@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 echo "Uninstalling old version ..."
 
@@ -10,49 +10,48 @@ echo "Installing brew..."
 
 echo "Installing brew dependencies..."
 
-brew install \
-  ack \
-  bash \
-  bash-completion \
-  chromedriver \
-  curl \
-  editorconfig \
-  ffmpeg \
-  figlet \
-  fzf \
-  git \
-  gnupg \
-  gnupg2 \
-  grep \
-  htop \
-  id3lib \
-  kubernetes-cli \
-  nmap \
-  neovim \
-  openssl \
-  sbt \
-  scala \
-  terminal-notifier \
-  thefuck \
-  tmate \
-  tmux \
-  vim \
-  wget
+brew install ack
+brew install bash
+brew install bash-completion
+brew install chromedriver
+brew install curl
+brew install editorconfig
+brew install ffmpeg
+brew install figlet
+brew install fzf
+brew install git
+brew install gnupg
+brew install gnupg2
+brew install grep
+brew install htop
+brew install id3lib
+brew install kubernetes-cli
+brew install neovim
+brew install nmap
+brew install openssl
+brew install python
+brew install sbt
+brew install scala
+brew install terminal-notifier
+brew install thefuck
+brew install tmate
+brew install tmux
+brew install vim
+brew install wget
 
 echo "Installinging ruby gems..."
 
-gem install \
-  sass \
-  jekyll \
-  kramdown \
-  rouge
+gem install jekyll
+gem install kramdown
+gem install rouge
+gem install sass
 
 echo "Installing python dependencies..."
 
+sudo python -m ensurepip
 pip install --upgrade pip
-pip install \
-  virtualenv \
-  neovim
+pip install neovim
+pip install virtualenv
 
 echo "Installing brew caskroom"
 
@@ -60,28 +59,27 @@ brew tap caskroom/cask
 
 echo "Installing brew casks..."
 
-brew cask install --appdir=/Applications \
-  android-file-transfer \
-  karabiner-elements \
-  keycastr \
-  vagrant \
-  virtualbox \
-  spotify \
-  visual-studio-code \
-  google-chrome \
-  firefox \
-  sublime-text \
-  slack \
-  intellij-idea \
-  zoomus \
-  gimp \
-  1password \
-  java \
-  docker \
-  dropbox \
-  iterm2 \
-  vlc \
-  postman
+brew cask install --appdir=/Applications 1password
+brew cask install --appdir=/Applications android-file-transfer
+brew cask install --appdir=/Applications docker
+brew cask install --appdir=/Applications dropbox
+brew cask install --appdir=/Applications firefox
+brew cask install --appdir=/Applications gimp
+brew cask install --appdir=/Applications google-chrome
+brew cask install --appdir=/Applications intellij-idea
+brew cask install --appdir=/Applications iterm2
+brew cask install --appdir=/Applications java
+brew cask install --appdir=/Applications karabiner-elements
+brew cask install --appdir=/Applications keycastr
+brew cask install --appdir=/Applications postman
+brew cask install --appdir=/Applications slack
+brew cask install --appdir=/Applications spotify 
+brew cask install --appdir=/Applications sublime-text
+brew cask install --appdir=/Applications vagrant
+brew cask install --appdir=/Applications virtualbox
+brew cask install --appdir=/Applications visual-studio-code
+brew cask install --appdir=/Applications vlc
+brew cask install --appdir=/Applications zoomus
 
 echo "Installing fonts caskroom"
 
@@ -89,17 +87,16 @@ brew tap caskroom/fonts
 
 echo "Installing fonts ..."
 
-brew cask install \
-  font-fira-code \
-  font-fira-mono \
-  font-fira-sans \
-  font-source-code-pro \
-  font-open-sans \
-  font-open-sans-condensed \
-  font-roboto \
-  font-roboto-mono \
-  font-roboto-condensed \
-  font-roboto-slab
+brew cask install font-fira-code
+brew cask install font-fira-mono
+brew cask install font-fira-sans
+brew cask install font-open-sans
+brew cask install font-open-sans-condensed
+brew cask install font-roboto
+brew cask install font-roboto-condensed
+brew cask install font-roboto-mono
+brew cask install font-roboto-slab
+brew cask install font-source-code-pro
 
 
 echo "Installing rust..."
