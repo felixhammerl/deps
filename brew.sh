@@ -28,7 +28,7 @@ brew install \
   id3lib \
   kubernetes-cli \
   nmap \
-  node \
+  neovim \
   openssl \
   sbt \
   scala \
@@ -47,7 +47,14 @@ gem install \
   kramdown \
   rouge
 
-echo "Installing brew casks caskroom"
+echo "Installing python dependencies..."
+
+pip install --upgrade pip
+pip install \
+  virtualenv \
+  neovim
+
+echo "Installing brew caskroom"
 
 brew tap caskroom/cask
 

@@ -5,7 +5,7 @@ set -eu
 echo "Configuring bash..."
 
 DIR=$(cd "$(dirname "$0")"; pwd)
-echo $DIR
+echo "working relative to $DIR"
 cp $DIR/.bash_profile ~
 
 read -p  "Please enter the HOMEBREW_GITHUB_API_TOKEN before proceeding!" HOMEBREW_GITHUB_API_TOKEN

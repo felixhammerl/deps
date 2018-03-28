@@ -1,11 +1,18 @@
 #!/usr/bin/env bash
 
-./macos.sh
-./bash.sh
-./brew.sh
-./vim.sh 
-./vscode.sh
-./git.sh
+set -eu
 
-echo -e "Please install the following software manually: \n\nCinch (App Store)\nShush (App Store)\nTicToc (AppStore)"
+echo "Welcome to the grand environment setup extravaganza."
+
+DIR=$(cd "$(dirname "$0")"; pwd)
+echo "working relative to $DIR"
+
+$DIR/macos.sh
+$DIR/bash.sh
+$DIR/brew.sh
+$DIR/vim.sh 
+$DIR/neovim.sh
+$DIR/vscode.sh
+
+echo -e "Please install the following software manually:\n\nCinch (AppStore)\nShush (App Store)\nTicToc (AppStore)"
 
