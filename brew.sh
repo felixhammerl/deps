@@ -28,6 +28,7 @@ brew install id3lib
 brew install kubernetes-cli
 brew install neovim
 brew install nmap
+brew install node
 brew install openssl
 brew install python
 brew install sbt
@@ -38,6 +39,13 @@ brew install tmate
 brew install tmux
 brew install vim
 brew install wget
+
+echo "Installing node dependencies"
+
+npm update -g
+npm install -g n
+npm install -g standard
+npm install -g vtop
 
 echo "Installinging ruby gems..."
 
