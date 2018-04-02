@@ -107,8 +107,4 @@ brew cask install font-roboto-slab
 brew cask install font-source-code-pro
 
 
-echo "Installing rust..."
-
-curl https://sh.rustup.rs -sSf | sh
-
 echo "Done!"

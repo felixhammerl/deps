@@ -10,6 +10,8 @@ echo "working relative to $DIR"
 $DIR/macos.sh
 $DIR/bash.sh
 $DIR/brew.sh
+$DIR/node.sh
+$DIR/rust.sh
 $DIR/vim.sh 
 $DIR/neovim.sh
 $DIR/vscode.sh

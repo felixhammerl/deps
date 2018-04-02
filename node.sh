@@ -2,7 +2,6 @@
 
 set -eu
 
-npm install -g \
-  n \
-  fkill \
-  standard
+npm install -g n
+npm install -g fkill
+npm install -g standard
