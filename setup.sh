@@ -20,4 +20,5 @@ $DIR/vscode.sh
 
 echo -e "Please install the following software manually:\n\nCinch (AppStore)\nShush (App Store)\nTicToc (AppStore)"
 
-echo -e "Please enable Fira Code and font ligatures and install the following IDEA plugins: IdeaVim, Rust, Scala, Toml."
+echo -e "Please enable Fira Code and font ligatures and install the following IDEA plugins:\n\nIdeaVim\nRust\nScala\nToml\nMaterial Theme UI
+"
