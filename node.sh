@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 echo "Installing node modules..."
 
 npm install -g n
