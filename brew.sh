@@ -40,27 +40,6 @@ brew install tmux
 brew install vim
 brew install wget
 
-echo "Installing node dependencies"
-
-npm update -g
-npm install -g n
-npm install -g standard
-npm install -g vtop
-
-echo "Installinging ruby gems..."
-
-gem install jekyll
-gem install kramdown
-gem install rouge
-gem install sass
-
-echo "Installing python dependencies..."
-
-sudo python -m ensurepip
-pip install --upgrade pip
-pip install neovim
-pip install virtualenv
-
 echo "Installing brew caskroom"
 
 brew tap caskroom/cask
@@ -105,6 +84,5 @@ brew cask install font-roboto-condensed
 brew cask install font-roboto-mono
 brew cask install font-roboto-slab
 brew cask install font-source-code-pro
-
 
 echo "Done!"

@@ -12,6 +12,8 @@ $DIR/bash.sh
 $DIR/brew.sh
 $DIR/node.sh
 $DIR/rust.sh
+$DIR/ruby.sh
+$DIR/python.sh
 $DIR/vim.sh 
 $DIR/neovim.sh
 $DIR/vscode.sh
