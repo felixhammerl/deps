@@ -15,7 +15,6 @@ export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 alias ls='ls -lGFh'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[ -f ~/.scm_breeze/scm_breeze.sh ] && source ~/.scm_breeze/scm_breeze.sh
 [ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
 
 PS1="\e[33m\w \e[36m\$(__git_ps1 '(%s)') \e[m\n> "
