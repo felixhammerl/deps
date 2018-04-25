@@ -8,6 +8,34 @@ echo "Installing brew..."
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Installing brew caskroom"
+
+brew tap caskroom/cask
+
+echo "Installing brew casks..."
+
+brew cask install --appdir=/Applications 1password
+brew cask install --appdir=/Applications android-file-transfer
+brew cask install --appdir=/Applications docker
+brew cask install --appdir=/Applications dropbox
+brew cask install --appdir=/Applications firefox
+brew cask install --appdir=/Applications gimp
+brew cask install --appdir=/Applications google-chrome
+brew cask install --appdir=/Applications intellij-idea-ce
+brew cask install --appdir=/Applications iterm2
+brew cask install --appdir=/Applications java
+brew cask install --appdir=/Applications karabiner-elements
+brew cask install --appdir=/Applications keycastr
+brew cask install --appdir=/Applications postman
+brew cask install --appdir=/Applications slack
+brew cask install --appdir=/Applications spotify 
+brew cask install --appdir=/Applications sublime-text
+brew cask install --appdir=/Applications vagrant
+brew cask install --appdir=/Applications virtualbox
+brew cask install --appdir=/Applications visual-studio-code
+brew cask install --appdir=/Applications vlc
+brew cask install --appdir=/Applications zoomus
+
 echo "Installing brew dependencies..."
 
 brew install ack
@@ -39,34 +67,6 @@ brew install tmate
 brew install tmux
 brew install vim
 brew install wget
-
-echo "Installing brew caskroom"
-
-brew tap caskroom/cask
-
-echo "Installing brew casks..."
-
-brew cask install --appdir=/Applications 1password
-brew cask install --appdir=/Applications android-file-transfer
-brew cask install --appdir=/Applications docker
-brew cask install --appdir=/Applications dropbox
-brew cask install --appdir=/Applications firefox
-brew cask install --appdir=/Applications gimp
-brew cask install --appdir=/Applications google-chrome
-brew cask install --appdir=/Applications intellij-idea-ce
-brew cask install --appdir=/Applications iterm2
-brew cask install --appdir=/Applications java
-brew cask install --appdir=/Applications karabiner-elements
-brew cask install --appdir=/Applications keycastr
-brew cask install --appdir=/Applications postman
-brew cask install --appdir=/Applications slack
-brew cask install --appdir=/Applications spotify 
-brew cask install --appdir=/Applications sublime-text
-brew cask install --appdir=/Applications vagrant
-brew cask install --appdir=/Applications virtualbox
-brew cask install --appdir=/Applications visual-studio-code
-brew cask install --appdir=/Applications vlc
-brew cask install --appdir=/Applications zoomus
 
 echo "Installing fonts caskroom"
 

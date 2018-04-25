@@ -17,6 +17,7 @@ $DIR/python.sh
 $DIR/vim.sh 
 $DIR/neovim.sh
 $DIR/vscode.sh
+$DIR/git.sh
 
 echo -e "Please install the following software manually:\n\nCinch (AppStore)\nShush (App Store)\nTicToc (AppStore)"
 
