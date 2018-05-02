@@ -36,6 +36,14 @@ brew cask install --appdir=/Applications visual-studio-code
 brew cask install --appdir=/Applications vlc
 brew cask install --appdir=/Applications zoomus
 
+echo "Installing brew drivers caskroom"
+
+brew tap caskroom/drivers
+
+echo "Installing drivers"
+
+brew cask install logitech-control-center
+
 echo "Installing brew dependencies..."
 
 brew install ack
