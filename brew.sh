@@ -58,6 +58,7 @@ brew install fzf
 brew install git
 brew install gnupg
 brew install gnupg2
+brew install gradle
 brew install grep
 brew install htop
 brew install id3lib
