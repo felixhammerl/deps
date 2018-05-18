@@ -27,6 +27,7 @@ brew cask install --appdir=/Applications java
 brew cask install --appdir=/Applications karabiner-elements
 brew cask install --appdir=/Applications keycastr
 brew cask install --appdir=/Applications postman
+brew cask install --appdir=/Applications screenflick
 brew cask install --appdir=/Applications slack
 brew cask install --appdir=/Applications spotify 
 brew cask install --appdir=/Applications sublime-text
