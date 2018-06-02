@@ -31,6 +31,7 @@ brew cask install --appdir=/Applications screenflick
 brew cask install --appdir=/Applications slack
 brew cask install --appdir=/Applications spotify 
 brew cask install --appdir=/Applications sublime-text
+brew cask install --appdir=/Applications tunnelblick
 brew cask install --appdir=/Applications vagrant
 brew cask install --appdir=/Applications virtualbox
 brew cask install --appdir=/Applications visual-studio-code
