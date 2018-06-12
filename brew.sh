@@ -79,6 +79,10 @@ brew install tmux
 brew install vim
 brew install wget
 
+echo "Post-install stuff for fzf"
+
+$(brew --prefix)/opt/fzf/install
+
 echo "Installing fonts caskroom"
 
 brew tap caskroom/fonts
