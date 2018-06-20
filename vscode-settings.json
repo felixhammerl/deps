@@ -7,5 +7,8 @@
     "standard.run": "onSave",
     "standard.autoFixOnSave": true,
     "editor.minimap.enabled": false,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true
+
 }
