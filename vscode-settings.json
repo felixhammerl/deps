@@ -1,7 +1,6 @@
 {
     "workbench.colorTheme": "Xcode Midnight",
     "vim.disableAnnoyingNeovimMessage": true,
-    "window.zoomLevel": 0,
     "files.autoSave": "onFocusChange",
     "javascript.validate.enable": false,
     "standard.run": "onSave",
@@ -9,6 +8,6 @@
     "editor.minimap.enabled": false,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true
-
+    "editor.fontLigatures": true,
+    "emmet.showExpandedAbbreviation": "never"
 }
