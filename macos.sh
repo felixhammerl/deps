@@ -20,11 +20,28 @@ if [ $FILEVAULT_STATUS != "FileVault is On." ]; then
   echo "FileVault is not turned on. Please encrypt your hard disk!"
 fi
 
-echo "Setting the file vault key to be destroyed on hibernate"
+echo "Configuring up security settings"
+sudo pmset restoredefaults
+echo "Throwing away key when going into hibernation (standby)"
 sudo pmset -a destroyfvkeyonstandby 1
-
-echo "Setting hibernate to 15 minutes after enterinf standby"
+echo "Standard safe sleep to memory first, then hibernate"
 sudo pmset -a hibernatemode 3
-sudo pmset -a standbydelay 900
+echo "Sleep after 20 min"
+sudo pmset -a sleep 20
+echo "Use standby after 30 minutes"
+sudo pmset -a standby 1
+sudo pmset -a standbydelay 1800
+echo "Don't do deep sleep"
+sudo pmset -a autopoweroff 0
+echo "Don't do powernaps"
+sudo pmset -a powernap 0
+echo "Don't wake up on WIFI/network connections"
+sudo pmset -a tcpkeepalive 0
+echo "Don't wake on magic Ethernet packets"
+sudo pmset -a womp 0
+echo "Ignore any ttys/ssh connected"
+sudo pmset -a ttyskeepawake 0
+echo "Do not wake up on AC connected"
+sudo pmset -a acwake 0
 
 echo "Done!"
