@@ -10,13 +10,13 @@ if [ $# != 0 ]; then
 fi
 
 ROOTLESS_STATUS=`/usr/bin/csrutil status | awk '/status/ {print $5}' | sed 's/\.$//'`
-if [ $ROOTLESS_STATUS == "enabled" ]; then
+if [[ $ROOTLESS_STATUS == "enabled" ]]; then
   echo "csrutil (\"rootless\") is enabled. please disable in boot screen and run again!"
   exit 1
 fi
 
 FILEVAULT_STATUS=`fdesetup status`
-if [ $FILEVAULT_STATUS != "FileVault is On." ]; then
+if [[ $FILEVAULT_STATUS != "FileVault is On." ]]; then
   echo "FileVault is not turned on. Please encrypt your hard disk!"
 fi
 
@@ -43,5 +43,7 @@ echo "Ignore any ttys/ssh connected"
 sudo pmset -a ttyskeepawake 0
 echo "Do not wake up on AC connected"
 sudo pmset -a acwake 0
+echo "Disable Powernap"
+sudo pmset -a darkwakes 0
 
 echo "Done!"
