@@ -20,7 +20,7 @@ if [[ $FILEVAULT_STATUS != "FileVault is On." ]]; then
   echo "FileVault is not turned on. Please encrypt your hard disk!"
 fi
 
-echo "Configuring up security settings"
+echo "Configuring security settings"
 sudo pmset restoredefaults
 echo "Throwing away key when going into hibernation (standby)"
 sudo pmset -a destroyfvkeyonstandby 1
