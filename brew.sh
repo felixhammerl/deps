@@ -16,6 +16,7 @@ echo "Installing brew casks..."
 
 brew cask install --appdir=/Applications 1password
 brew cask install --appdir=/Applications android-file-transfer
+brew cask install --appdir=/Applications burp-suite
 brew cask install --appdir=/Applications docker
 brew cask install --appdir=/Applications dropbox
 brew cask install --appdir=/Applications firefox
@@ -64,11 +65,14 @@ brew install gradle
 brew install grep
 brew install htop
 brew install id3lib
+brew install john-jumbo
 brew install kubernetes-cli
+brew install mkcert
 brew install neovim
 brew install nmap
 brew install node
 brew install openssl
+brew install pinentry-mac
 brew install python
 brew install sbt
 brew install scala
@@ -76,7 +80,9 @@ brew install terminal-notifier
 brew install thefuck
 brew install tmate
 brew install tmux
+brew install travis
 brew install vim
+brew install watch
 brew install wget
 
 echo "Post-install stuff for fzf"
