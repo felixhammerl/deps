@@ -10,7 +10,6 @@ rm -f ~/.vimrc
 echo "Setting up .vim folder..."
 git clone git@github.com:felixhammerl/vim.git ~/.vim
 ln -s ~/.vim/.vimrc ~/.vimrc
-~/.vim/update.sh
 
 mkdir -p ~/.vim/swap
 
