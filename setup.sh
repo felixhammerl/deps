@@ -14,7 +14,6 @@ $DIR/node.sh
 $DIR/rust.sh
 $DIR/ruby.sh
 $DIR/python.sh
-$DIR/vim.sh 
 $DIR/neovim.sh
 $DIR/vscode.sh
 $DIR/git.sh
