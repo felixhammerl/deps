@@ -30,6 +30,7 @@ brew cask install --appdir=/Applications karabiner-elements
 brew cask install --appdir=/Applications keycastr
 brew cask install --appdir=/Applications libreoffice
 brew cask install --appdir=/Applications owasp-zap
+brew cask install --appdir=/Applications pallotron-yubiswitch
 brew cask install --appdir=/Applications postman
 brew cask install --appdir=/Applications screenflick
 brew cask install --appdir=/Applications slack
