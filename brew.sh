@@ -73,11 +73,12 @@ brew install id3lib
 brew install john-jumbo
 brew install kubernetes-cli
 brew install mkcert
+brew install n
 brew install neovim
 brew install nmap
-brew install node
 brew install openssl
 brew install pinentry-mac
+brew install python@2
 brew install python
 brew install sbt
 brew install scala
