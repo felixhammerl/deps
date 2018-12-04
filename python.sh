@@ -3,9 +3,12 @@
 echo "Installing python dependencies..."
 
 sudo python -m ensurepip
-pip install --upgrade pip
-pip install neovim
-pip install virtualenv
+
+pip2 install --upgrade setuptools pip
+pip3 install --upgrade setuptools pip
+
+pip3 install neovim
+pip3 install pynvim
 
 echo "Done!"
 
