@@ -13,6 +13,8 @@ n lts
 echo "Installing node modules..."
 
 npm install -g standard
+npm install -g javascript-typescript-langserver
+npm install -g vscode-css-languageserver-bin
 
 echo "Done!"
 
