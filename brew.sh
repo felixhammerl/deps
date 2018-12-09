@@ -42,6 +42,10 @@ brew cask install --appdir=/Applications vagrant
 brew cask install --appdir=/Applications virtualbox
 brew cask install --appdir=/Applications visual-studio-code
 brew cask install --appdir=/Applications vlc
+brew cask install --appdir=/Applications yubico-authenticator
+brew cask install --appdir=/Applications yubico-yubikey-piv-manager
+brew cask install --appdir=/Applications yubico-yubikey-manager
+brew cask install --appdir=/Applications yubico-yubikey-personalization-gui
 brew cask install --appdir=/Applications zoomus
 
 echo "Installing brew drivers caskroom"
