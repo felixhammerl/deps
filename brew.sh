@@ -28,9 +28,7 @@ brew cask install --appdir=/Applications iterm2
 brew cask install --appdir=/Applications java
 brew cask install --appdir=/Applications karabiner-elements
 brew cask install --appdir=/Applications keycastr
-brew cask install --appdir=/Applications libreoffice
 brew cask install --appdir=/Applications owasp-zap
-brew cask install --appdir=/Applications pallotron-yubiswitch
 brew cask install --appdir=/Applications postman
 brew cask install --appdir=/Applications screenflick
 brew cask install --appdir=/Applications slack
@@ -38,14 +36,12 @@ brew cask install --appdir=/Applications spotify
 brew cask install --appdir=/Applications steelseries-exactmouse-tool
 brew cask install --appdir=/Applications sublime-text
 brew cask install --appdir=/Applications tunnelblick
-brew cask install --appdir=/Applications vagrant
 brew cask install --appdir=/Applications virtualbox
 brew cask install --appdir=/Applications visual-studio-code
 brew cask install --appdir=/Applications vlc
 brew cask install --appdir=/Applications yubico-authenticator
 brew cask install --appdir=/Applications yubico-yubikey-piv-manager
 brew cask install --appdir=/Applications yubico-yubikey-manager
-brew cask install --appdir=/Applications yubico-yubikey-personalization-gui
 brew cask install --appdir=/Applications zoomus
 
 echo "Installing brew drivers caskroom"
