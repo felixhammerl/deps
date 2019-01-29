@@ -16,6 +16,7 @@ alias ls='ls -lGFh'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
+eval $(thefuck --alias)
 
 PS1="\e[33m\w \e[36m\$(__git_ps1 '(%s)') \e[m\n> "
 
