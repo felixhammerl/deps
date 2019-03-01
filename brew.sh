@@ -75,7 +75,7 @@ brew install kubernetes-cli
 brew install mkcert
 brew install neovim
 brew install nmap
-brew install node
+brew install n
 brew install openssl
 brew install pinentry-mac
 brew install python@2
