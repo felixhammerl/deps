@@ -73,13 +73,14 @@ brew install id3lib
 brew install john-jumbo
 brew install kubernetes-cli
 brew install mkcert
+brew install n
 brew install neovim
 brew install nmap
-brew install n
+brew install opensc
 brew install openssl
 brew install pinentry-mac
-brew install python@2
 brew install python
+brew install python@2
 brew install sbt
 brew install scala
 brew install terminal-notifier
@@ -90,6 +91,9 @@ brew install travis
 brew install vim
 brew install watch
 brew install wget
+brew install ykman
+brew install yubico-piv-tool
+brew install yubikey-personalization
 
 echo "Post-install stuff for fzf"
 
