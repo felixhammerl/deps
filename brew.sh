@@ -16,7 +16,6 @@ echo "Installing brew casks..."
 
 brew cask install --appdir=/Applications 1password
 brew cask install --appdir=/Applications android-file-transfer
-brew cask install --appdir=/Applications audio-hijack
 brew cask install --appdir=/Applications bitbar
 brew cask install --appdir=/Applications burp-suite
 brew cask install --appdir=/Applications docker
