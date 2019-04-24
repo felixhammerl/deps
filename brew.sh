@@ -16,6 +16,7 @@ echo "Installing brew casks..."
 
 brew cask install --appdir=/Applications 1password
 brew cask install --appdir=/Applications android-file-transfer
+brew cask install --appdir=/Applications audio-hijack
 brew cask install --appdir=/Applications bitbar
 brew cask install --appdir=/Applications burp-suite
 brew cask install --appdir=/Applications docker
@@ -33,7 +34,6 @@ brew cask install --appdir=/Applications postman
 brew cask install --appdir=/Applications screenflick
 brew cask install --appdir=/Applications slack
 brew cask install --appdir=/Applications spotify
-brew cask install --appdir=/Applications steelseries-exactmouse-tool
 brew cask install --appdir=/Applications sublime-text
 brew cask install --appdir=/Applications tunnelblick
 brew cask install --appdir=/Applications virtualbox
