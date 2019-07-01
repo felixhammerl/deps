@@ -20,3 +20,4 @@ eval $(thefuck --alias)
 
 PS1="\e[33m\w \e[36m\$(__git_ps1 '(%s)') \e[m\n> "
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
