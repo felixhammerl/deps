@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Xcode Midnight",
     "vim.disableAnnoyingNeovimMessage": true,
     "files.autoSave": "onFocusChange",
     "javascript.validate.enable": false,
@@ -9,5 +8,19 @@
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "emmet.showExpandedAbbreviation": "never"
+    "emmet.showExpandedAbbreviation": "never",
+    "editor.fontSize": 16,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Xcode Midnight",
+    "terminal.integrated.fontSize": 16,
+    "window.restoreWindows": "all",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.rendererType": "dom",
+    "vim.useSystemClipboard": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.scrollback": 1000000,
+    "workbench.editor.enablePreview": false,
+    "liveshare.featureSet": "insiders"
 }
