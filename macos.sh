@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 set -eu
 
@@ -22,32 +22,5 @@ fi
 
 echo "Creating projects folder"
 mkdir -p ~/projects
-
-# echo "Configuring non-crashing safe sleep/hibernate settings"
-# echo "Restoring defaults before applying new config"
-# sudo pmset restoredefaults
-# echo "Throwing away key when going into hibernation (standby)"
-# sudo pmset -a destroyfvkeyonstandby 1
-# echo "Standard safe sleep to memory first, then hibernate"
-# sudo pmset -a hibernatemode 3
-# echo "Sleep after 20 min"
-# sudo pmset -a sleep 20
-# echo "Use standby after 30 minutes"
-# sudo pmset -a standby 1
-# sudo pmset -a standbydelay 1800
-# echo "Don't do deep sleep"
-# sudo pmset -a autopoweroff 0
-# echo "Don't do powernaps"
-# sudo pmset -a powernap 0
-# echo "Don't wake up on WIFI/network connections"
-# sudo pmset -a tcpkeepalive 0
-# echo "Don't wake on magic Ethernet packets"
-# sudo pmset -a womp 0
-# echo "Ignore any ttys/ssh connected"
-# sudo pmset -a ttyskeepawake 0
-# echo "Do not wake up on AC connected"
-# sudo pmset -a acwake 0
-# echo "Disable Powernap"
-# sudo pmset -a darkwakes 0
 
 echo "Done!"

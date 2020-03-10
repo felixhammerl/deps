@@ -1,15 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-echo "Installinging ruby gems..."
+echo "Installing rbenv ..."
 
-curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-gem install jekyll
-gem install kramdown
-gem install rouge
-gem install sass
+rbenv init
 
 echo "Done!"
 

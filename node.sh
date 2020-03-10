@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 echo "Creating folder for node versions"
 
@@ -8,13 +8,11 @@ sudo chown "$(whoami)" /usr/local/n
 echo "Installing node latest and LTS..."
 
 n latest
-n lts
 
 echo "Installing node modules..."
 
 npm install -g standard
-npm install -g javascript-typescript-langserver
-npm install -g vscode-css-languageserver-bin
+npm install -g npm-check-updates
 
 echo "Done!"
 

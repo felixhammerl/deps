@@ -9,8 +9,6 @@
     status = auto
 [core]
     editor = vim
-[credential]
-    helper = osxkeychain
 [push]
     default = simple
 [pull]
