@@ -29,3 +29,4 @@ autoload -Uz compinit && compinit
 [ -f /Users/eufhammerl/.travis/travis.sh ] && source /Users/eufhammerl/.travis/travis.sh
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
+eval $(thefuck --alias)
