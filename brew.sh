@@ -107,6 +107,10 @@ brew install yubico-piv-tool
 brew install zlib
 brew install zsh-completions
 
+brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
+brew install yubikey-agent
+brew services start yubikey-agent
+
 echo "Post-install stuff for fzf"
 
 $(brew --prefix)/opt/fzf/install

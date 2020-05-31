@@ -10,6 +10,7 @@ echo "working relative to $DIR"
 "$DIR"/macos.sh
 "$DIR"/shell.sh
 "$DIR"/brew.sh
+"$DIR"/ssh.sh
 "$DIR"/node.sh
 "$DIR"/rust.sh
 "$DIR"/ruby.sh
