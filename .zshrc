@@ -8,6 +8,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR=vim
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JAVA_HOME=$(/usr/libexec/java_home)
+export SSH_AUTH_SOCK="/usr/local/var/run/yubikey-agent.sock"
 
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
