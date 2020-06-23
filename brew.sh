@@ -8,12 +8,9 @@ echo "Installing brew..."
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Installing brew caskroom"
-
-brew tap caskroom/cask
-
 echo "Installing brew casks..."
 
+brew tap caskroom/cask
 brew cask install --appdir=/Applications 1password
 brew cask install --appdir=/Applications 1password-cli
 brew cask install --appdir=/Applications android-file-transfer
@@ -44,15 +41,12 @@ brew cask install --appdir=/Applications yubico-authenticator
 brew cask install --appdir=/Applications yubico-yubikey-manager
 brew cask install --appdir=/Applications zoomus
 
-echo "Installing brew drivers caskroom"
+echo "Installing drivers..."
 
 brew tap caskroom/drivers
-
-echo "Installing drivers"
-
 brew cask install logitech-control-center
 
-echo "Installing brew dependencies..."
+echo "Installing dependencies..."
 
 brew install ack
 brew install remind101/formulae/assume-role
@@ -106,6 +100,8 @@ brew install ykman
 brew install yubico-piv-tool
 brew install zlib
 brew install zsh-completions
+
+echo "Installing Yubikey SSH agent..."
 
 brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
 brew install yubikey-agent
