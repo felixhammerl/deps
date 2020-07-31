@@ -81,6 +81,8 @@ brew install perl
 brew install pinentry-mac
 brew install pv
 brew install python@2
+brew install python@3
+brew install python@3.7
 brew install ruby
 brew install rbenv
 brew install versent/taps/saml2aws
@@ -101,11 +103,11 @@ brew install yubico-piv-tool
 brew install zlib
 brew install zsh-completions
 
-echo "Installing Yubikey SSH agent..."
+# echo "Installing Yubikey SSH agent..."
 
-brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
-brew install yubikey-agent
-brew services start yubikey-agent
+# brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
+# brew install yubikey-agent
+# brew services start yubikey-agent
 
 echo "Post-install stuff for fzf"
 
