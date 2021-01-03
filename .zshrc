@@ -6,10 +6,11 @@ export HISTCONTROL=erasedups
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR=vim
+export PIPENV_VENV_IN_PROJECT=true
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export SSH_AUTH_SOCK="/usr/local/var/run/yubikey-agent.sock"
-
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
 zsh_prompt_parse_git_branch() {
@@ -21,6 +22,7 @@ PROMPT='%~ %{%F{green}%}$(zsh_prompt_parse_git_branch)%{%F{none}%}
 > '
 
 alias ls='ls -lGFh'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

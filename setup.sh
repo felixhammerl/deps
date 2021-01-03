@@ -10,7 +10,6 @@ echo "working relative to $DIR"
 "$DIR"/macos.sh
 "$DIR"/shell.sh
 "$DIR"/brew.sh
-"$DIR"/ssh.sh
 "$DIR"/node.sh
 "$DIR"/rust.sh
 "$DIR"/ruby.sh
@@ -18,6 +17,3 @@ echo "working relative to $DIR"
 "$DIR"/neovim.sh
 "$DIR"/vscode.sh
 "$DIR"/git.sh
-
-echo -e "Please enable Fira Code and font ligatures and install the following IDEA plugins:\\n\\nIdeaVim\\nRust\\nScala\\nToml\\nMaterial Theme UI
-"

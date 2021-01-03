@@ -50,64 +50,44 @@ echo "Installing dependencies..."
 
 brew install ack
 brew install remind101/formulae/assume-role
-brew install automake
 brew install awscli
 brew install bash
-brew install bash-completion
 brew install coreutils
 brew install curl
 brew install direnv
 brew install ecm
 brew install editorconfig
-brew install ffmpeg
-brew install figlet
 brew install fzf
 brew install git
 brew install gnu-sed
 brew install gnupg
 brew install gradle
 brew install grep
-brew install htop
-brew install id3lib
-brew install john-jumbo
 brew install jq
 brew install kubernetes-cli
-brew install mkcert
 brew install n
 brew install neovim
 brew install nmap
-brew install opensc
 brew install perl
 brew install pinentry-mac
 brew install pv
 brew install python@2
 brew install python@3
-brew install python@3.7
+brew install pipenv
+brew install pyenv
 brew install ruby
 brew install rbenv
 brew install versent/taps/saml2aws
-brew install sbt
-brew install scala
-brew install serverless
-brew install telnet
-brew install terminal-notifier
 brew install terraform
 brew install thefuck
 brew install tmate
 brew install tmux
-brew install travis
 brew install watch
 brew install wget
 brew install ykman
 brew install yubico-piv-tool
 brew install zlib
 brew install zsh-completions
-
-# echo "Installing Yubikey SSH agent..."
-
-# brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
-# brew install yubikey-agent
-# brew services start yubikey-agent
 
 echo "Post-install stuff for fzf"
 

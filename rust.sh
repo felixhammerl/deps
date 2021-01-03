@@ -11,4 +11,3 @@ rustup component add rls-preview rust-analysis rust-src
 rustup show
 
 echo "Done!"
-
