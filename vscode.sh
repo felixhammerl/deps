@@ -41,4 +41,7 @@ code --install-extension vscodevim.vim
 
 cp vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
+mkdir -p $HOME/Library/Application\ Support/Code/User/snippets
+cp vscode-python-snippets.json $HOME/Library/Application\ Support/Code/User/snippets/python.json
+
 echo "Done!"
