@@ -8,16 +8,12 @@ rm -rfv ~/.vim
 rm -f ~/.vimrc
 
 echo "Setting up .vim folder..."
-git clone git@github.com:felixhammerl/vim.git ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
+git clone git@github.com:felixhammerl/vim.git ~/.config/nvim
 
 echo "Creating swap dir"
-mkdir -p ~/.vim/swap
-
-echo "setting up neovim folder"
-DIR=$(cd "$(dirname "$0")"; pwd)
-mkdir -p ~/.config/nvim
-cp "$DIR"/neovim-config.vim ~/.config/nvim/init.vim
+mkdir -p ~/.nvim/undo
+mkdir -p ~/.nvim/swp
+mkdir -p ~/.nvim/backup
 
 echo "Replacing vim with neovim"
 ln -s /usr/local/bin/nvim /usr/local/bin/vi
