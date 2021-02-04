@@ -5,14 +5,14 @@ export HISTFILE=~/.zsh_history
 export HISTCONTROL=erasedups
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PIPENV_VENV_IN_PROJECT=true
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PYENV_ROOT="$HOME/.pyenv"
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export MAVEN_OPTS="$MAVEN_OPTS -Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m"
 
+export PIPENV_VENV_IN_PROJECT=true
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
-
 eval "$(pyenv init -)"
 
 zsh_prompt_parse_git_branch() {
