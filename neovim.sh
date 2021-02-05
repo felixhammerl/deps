@@ -4,16 +4,16 @@ set -eu
 
 echo "Cleaning up pre-flight"
 rm -rfv ~/.config/nvim
-rm -rfv ~/.vim
-rm -f ~/.vimrc
 
-echo "Setting up .vim folder..."
-git clone git@github.com:felixhammerl/vim.git ~/.config/nvim
-
-echo "Creating swap dir"
+echo "Creating dirs"
+mkdir -p ~/.config/nvim
 mkdir -p ~/.nvim/undo
 mkdir -p ~/.nvim/swp
 mkdir -p ~/.nvim/backup
+
+echo "Setting up neovim..."
+curl https://raw.githubusercontent.com/felixhammerl/vim/master/init.vim > ~/.config/nvim/init.vim
+curl https://raw.githubusercontent.com/felixhammerl/vim/master/coc-settings.json > ~/.config/nvim/coc-settings.json
 
 echo "Replacing vim with neovim"
 ln -s /usr/local/bin/nvim /usr/local/bin/vi
