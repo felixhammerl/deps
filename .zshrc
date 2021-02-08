@@ -9,11 +9,17 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # export MAVEN_OPTS="$MAVEN_OPTS -Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m"
 
+export PATH=/usr/local/bin:${PATH}
+
 export PIPENV_VENV_IN_PROJECT=true
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 eval "$(pyenv init -)"
+
+export PATH=$HOME/.cargo/bin:${PATH}
+
+export GOPATH=$HOME/.go
+export PATH=$PATH:/usr/local/lib/go/bin:$GOPATH/bin
 
 zsh_prompt_parse_git_branch() {
   git branch 2> /dev/null | sed -e $'s/\x1b\\[[0-9;]*[a-zA-Z]//g' -e '/^[^*]/d' -e 's/* \[.*\] \(.*\)/(\1)/g'
@@ -36,4 +42,17 @@ eval "$(direnv hook zsh)"
 
 eval $(thefuck --alias)
 
+if [[ "$TERM" != "screen" ]]; then
+    # Attempt to discover a detached session and attach
+    # it, else create a new session
 
+    WHOAMI=$(whoami)
+    if tmux has-session -t $WHOAMI 2>/dev/null; then
+        tmux -2 attach-session -t $WHOAMI
+    else
+        tmux -2 new-session -s $WHOAMI
+    fi
+fi
+
+# Set breakpoint() in Python to call pudb
+export PYTHONBREAKPOINT="pudb.set_trace"
