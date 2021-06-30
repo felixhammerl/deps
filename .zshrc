@@ -11,24 +11,33 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
-function cd() {
-  builtin cd "$@"
+function auto_active_env() {
+  ## Default path to virtualenv in your projects
+  DEFAULT_ENV_PATH="./.venv"
+
+  ## If env folder is found then activate the vitualenv
+  function activate_venv() {
+    if [[ -f "${DEFAULT_ENV_PATH}/bin/activate" ]] ; then 
+      source "${DEFAULT_ENV_PATH}/bin/activate"
+      echo "Activating ${VIRTUAL_ENV}"
+    fi
+  }
 
   if [[ -z "$VIRTUAL_ENV" ]] ; then
-    ## If env folder is found then activate the vitualenv
-    if [[ -d ./.venv ]] ; then
-      source ./.venv/bin/activate
-    fi
+    activate_venv
   else
     ## check the current folder belong to earlier VIRTUAL_ENV folder
     # if yes then do nothing
-    # else deactivate
-    parentdir="$(dirname "$VIRTUAL_ENV")"
-    if [[ "$PWD"/ != "$parentdir"/* ]] ; then
-      deactivate
-    fi
+    # else deactivate then run a new env folder check
+      parentdir="$(dirname ${VIRTUAL_ENV})"
+      if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+        echo "Deactivating ${VIRTUAL_ENV}"
+        deactivate
+        activate_venv
+      fi
   fi
 }
+chpwd_functions=(${chpwd_functions[@]} "auto_active_env")
 
 export PYTHONBREAKPOINT="pudb.set_trace"
 export PIPENV_VENV_IN_PROJECT=true
