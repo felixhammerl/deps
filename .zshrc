@@ -9,17 +9,32 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # export MAVEN_OPTS="$MAVEN_OPTS -Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m"
 
-export PATH=/usr/local/bin:${PATH}
+export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
+function cd() {
+  builtin cd "$@"
+
+  if [[ -z "$VIRTUAL_ENV" ]] ; then
+    ## If env folder is found then activate the vitualenv
+    if [[ -d ./.venv ]] ; then
+      source ./.venv/bin/activate
+    fi
+  else
+    ## check the current folder belong to earlier VIRTUAL_ENV folder
+    # if yes then do nothing
+    # else deactivate
+    parentdir="$(dirname "$VIRTUAL_ENV")"
+    if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+      deactivate
+    fi
+  fi
+}
+
+export PYTHONBREAKPOINT="pudb.set_trace"
 export PIPENV_VENV_IN_PROJECT=true
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
-export PATH=$HOME/.cargo/bin:$PATH
-
-export GOPATH=$HOME/.go
-export PATH=$PATH:/usr/local/lib/go/bin:$GOPATH/bin
 
 zsh_prompt_parse_git_branch() {
   git branch 2> /dev/null | sed -e $'s/\x1b\\[[0-9;]*[a-zA-Z]//g' -e '/^[^*]/d' -e 's/* \[.*\] \(.*\)/(\1)/g'
@@ -40,19 +55,12 @@ autoload -Uz compinit && compinit
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
 
-eval $(thefuck --alias)
+eval $(ssh-agent)
+ssh-add "$HOME/.ssh/id_rsa"
 
-if [[ "$TERM" != "screen" ]]; then
-    # Attempt to discover a detached session and attach
-    # it, else create a new session
+nuke_python_caches() {
+  find . -name "*.pyc" | xargs rm
+  rm -rf .pytest_cache
+  find . -name "__pycache__" | xargs rm -rf
+}
 
-    WHOAMI=$(whoami)
-    if tmux has-session -t $WHOAMI 2>/dev/null; then
-        tmux -2 attach-session -t $WHOAMI
-    else
-        tmux -2 new-session -s $WHOAMI
-    fi
-fi
-
-# Set breakpoint() in Python to call pudb
-export PYTHONBREAKPOINT="pudb.set_trace"
