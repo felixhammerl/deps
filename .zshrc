@@ -6,8 +6,6 @@ export HISTCONTROL=erasedups
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-# export JAVA_HOME=$(/usr/libexec/java_home)
-# export MAVEN_OPTS="$MAVEN_OPTS -Xms1024m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=1024m"
 
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
@@ -72,4 +70,16 @@ nuke_python_caches() {
   rm -rf .pytest_cache
   find . -name "__pycache__" | xargs rm -rf
 }
+
+if [[ "$TERM" != "screen" ]]; then
+    # Attempt to discover a detached session and attach
+    # it, else create a new session
+
+    WHOAMI=$(whoami)
+    if tmux has-session -t $WHOAMI 2>/dev/null; then
+        tmux -2 attach-session -t $WHOAMI
+    else
+        tmux -2 new-session -s $WHOAMI
+    fi
+fi
 
