@@ -48,7 +48,7 @@ zsh_prompt_parse_git_branch() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='%~ %{%F{green}%}$(zsh_prompt_parse_git_branch)%{%F{none}%}
+PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] %~ %{%F{green}%}$(zsh_prompt_parse_git_branch)%{%F{none}%}
 > '
 
 alias ls='ls -lGFh'
@@ -70,16 +70,4 @@ nuke_python_caches() {
   rm -rf .pytest_cache
   find . -name "__pycache__" | xargs rm -rf
 }
-
-if [[ "$TERM" != "screen" ]]; then
-    # Attempt to discover a detached session and attach
-    # it, else create a new session
-
-    WHOAMI=$(whoami)
-    if tmux has-session -t $WHOAMI 2>/dev/null; then
-        tmux -2 attach-session -t $WHOAMI
-    else
-        tmux -2 new-session -s $WHOAMI
-    fi
-fi
 
