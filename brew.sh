@@ -17,8 +17,6 @@ brew tap homebrew/cask
 brew install 1password
 brew install 1password-cli
 brew install android-file-transfer
-brew install bitbar
-brew install brave-browser
 brew install burp-suite
 brew install dropbox
 brew install firefox
@@ -53,11 +51,14 @@ echo "Installing dependencies..."
 brew install ack
 brew install awscli
 brew install bash
+
+brew install docker
+brew install lima
 brew install colima
+
 brew install coreutils
 brew install curl
 brew install direnv
-brew install docker
 brew install ecm
 brew install editorconfig
 brew install fzf
