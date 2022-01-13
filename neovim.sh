@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/felixhammerl/vim/master/init.vim > ~/.con
 curl https://raw.githubusercontent.com/felixhammerl/vim/master/coc-settings.json > ~/.config/nvim/coc-settings.json
 
 echo "Replacing vim with neovim"
-ln -s /usr/local/bin/nvim /usr/local/bin/vi
-ln -s /usr/local/bin/nvim /usr/local/bin/vim
+ln -s /opt/homebrew/bin/nvim /usr/local/bin/vi
+ln -s /opt/homebrew/bin/nvim /usr/local/bin/vim
 
 echo "done!"

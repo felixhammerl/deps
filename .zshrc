@@ -57,13 +57,13 @@ alias ls='ls -lGFh'
 
 autoload -Uz compinit && compinit
 
-[ -s "/Users/eufhammerl/.scm_breeze/scm_breeze.sh" ] && source "/Users/eufhammerl/.scm_breeze/scm_breeze.sh"
+[ -s "/Users/fhammerl/.scm_breeze/scm_breeze.sh" ] && source "/Users/fhammerl/.scm_breeze/scm_breeze.sh"
 
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
 
 eval $(ssh-agent)
-ssh-add "$HOME/.ssh/id_ecdsa_sk_yk4c"
+ssh-add "$HOME/.ssh/id_rsa"
 
 nuke_python_caches() {
   find . -name "*.pyc" | xargs rm

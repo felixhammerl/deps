@@ -10,7 +10,6 @@ ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /us
 code --install-extension arc0re.theme-xcode-midnight
 code --install-extension bibhasdn.unique-lines
 code --install-extension bungcip.better-toml
-code --install-extension chenxsan.vscode-standardjs
 code --install-extension EditorConfig.EditorConfig
 code --install-extension Equinusocio.vsc-community-material-theme
 code --install-extension Equinusocio.vsc-material-theme

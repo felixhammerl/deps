@@ -2,9 +2,11 @@
 
 echo "Installing python dependencies..."
 
-pip2 install --upgrade pip
-pip install --upgrade pip
-pip install pynvim virtualenv
+pip3 install --upgrade pip
+pip3 install pynvim virtualenv
+
+pyenv install 3.8.0
+pyenv install 3.10.0
 
 echo "Done!"
 
