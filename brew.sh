@@ -53,6 +53,7 @@ brew install awscli
 brew install bash
 
 brew install docker
+brew install docker-compose
 brew install lima
 brew install colima
 
