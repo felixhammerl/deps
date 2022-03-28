@@ -17,6 +17,7 @@ brew tap homebrew/cask
 brew install 1password
 brew install 1password-cli
 brew install android-file-transfer
+brew install ballast
 brew install burp-suite
 brew install dropbox
 brew install firefox
