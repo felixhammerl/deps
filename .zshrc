@@ -9,6 +9,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
+export GNUPGHOME=~/.gnupg
 function reset_gpg() {
   gpg-connect-agent "scd serialno" "learn --force" /bye
 }
