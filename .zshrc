@@ -9,6 +9,10 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PATH=~/.cargo/bin:/usr/local/bin:${PATH}
 
+function reset_gpg() {
+  gpg-connect-agent "scd serialno" "learn --force" /bye
+}
+
 function auto_active_env() {
   ## Default path to virtualenv in your projects
   DEFAULT_ENV_PATH="./.venv"
