@@ -1,6 +1,7 @@
 [user]
     name = Felix Hammerl
     email = fhammerl@thoughtworks.com
+    signingkey = 7859E6520888D02E
 [color]
     ui = true
     branch = auto
@@ -15,3 +16,5 @@
     rebase = true
 [help]
     autocorrect = 0
+[commit]
+    gpgsign = true
