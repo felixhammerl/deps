@@ -13,6 +13,9 @@ export GNUPGHOME=~/.gnupg
 function reset_gpg() {
   gpg-connect-agent "scd serialno" "learn --force" /bye
 }
+function kill_gpg() {
+  gpgconf --kill gpg-agent
+}
 
 function auto_active_env() {
   ## Default path to virtualenv in your projects
