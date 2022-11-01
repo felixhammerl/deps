@@ -10,6 +10,7 @@ echo "working relative to $DIR"
 ("$DIR"/macos.sh)
 ("$DIR"/shell.sh) && source ~/.zshrc
 ("$DIR"/brew.sh) && source ~/.zshrc
+("$DIR"/tmux.sh) && source ~/.zshrc
 ("$DIR"/node.sh) && source ~/.zshrc
 ("$DIR"/rust.sh) && source ~/.zshrc
 ("$DIR"/ruby.sh) && source ~/.zshrc
