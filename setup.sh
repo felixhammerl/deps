@@ -7,7 +7,7 @@ echo "Welcome to the grand environment setup extravaganza."
 DIR=$(cd "$(dirname "$0")"; pwd)
 echo "working relative to $DIR"
 
-("$DIR"/macos.sh) && source ~/.zshrc
+("$DIR"/macos.sh)
 ("$DIR"/shell.sh) && source ~/.zshrc
 ("$DIR"/brew.sh) && source ~/.zshrc
 ("$DIR"/node.sh) && source ~/.zshrc
