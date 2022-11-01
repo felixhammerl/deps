@@ -8,8 +8,8 @@ DIR=$(cd "$(dirname "$0")"; pwd)
 echo "working relative to $DIR"
 
 ("$DIR"/macos.sh)
-("$DIR"/shell.sh) && source ~/.zshrc
-("$DIR"/brew.sh) && source ~/.zshrc
+("$DIR"/shell.sh)
+("$DIR"/brew.sh)
 ("$DIR"/tmux.sh) && source ~/.zshrc
 ("$DIR"/node.sh) && source ~/.zshrc
 ("$DIR"/rust.sh) && source ~/.zshrc
