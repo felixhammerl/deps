@@ -40,7 +40,6 @@ brew install inkscape
 brew install iterm2
 brew install karabiner-elements
 brew install ledger-live
-brew install logitech-control-center
 brew install owasp-zap
 brew install postman
 brew install signal
@@ -53,11 +52,6 @@ brew install vlc
 brew install yubico-authenticator
 brew install yubico-yubikey-manager
 brew install zoom
-
-echo "Installing drivers..."
-
-brew tap homebrew/cask-drivers
-brew install logitech-control-center
 
 echo "Installing dependencies..."
 
