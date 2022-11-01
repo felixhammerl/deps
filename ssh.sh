@@ -25,6 +25,7 @@ read -r "should_continue?Do you want to set up a FIDO2 key for SSH from scratch?
 if [[ "$should_continue" =~ ^[Yy]$ ]]
 then
   read -r "key_name?Please specify the name you would like to use? [Default: id_ecdsa_sk]" 
+  key_name=${key_name:=id_ecdsa_sk}
 
   ssh-keygen -t ecdsa-sk -O resident -f "$key_name"
 
@@ -44,6 +45,7 @@ read -r "should_continue?Do you want to import a FIDO2 key for SSH from scratch?
 if [[ "$should_continue" =~ ^[Yy]$ ]]
 then
   read -r "key_name?Please specify the name you would like to use? [Default: id_ecdsa_sk]" 
+  key_name=${key_name:=id_ecdsa_sk}
 
   ssh-keygen -K
   mv id_ecdsa_sk_rk "~/.ssh/$key_name"
