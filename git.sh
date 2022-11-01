@@ -8,8 +8,8 @@ cp .gitconfig ~/.gitconfig
 
 echo "Installing scm breeze..."
 
+rm -rf ~/.scm_breeze
 git clone https://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
-~/.scm_breeze/install.sh
 
 cat >> ~/.zshrc <<HERE
 
@@ -26,6 +26,8 @@ PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] %~ %{%F{green}%}$(zsh_prompt_
 > '
 
 HERE
+
+~/.scm_breeze/install.sh
 
 echo "Done!"
 

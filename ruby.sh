@@ -10,7 +10,7 @@ cat >> ~/.zshrc <<HERE
 # Ruby settings
 # 
 
-eval "$(rbenv init -)"
+eval "\$(rbenv init -)"
 
 HERE
 

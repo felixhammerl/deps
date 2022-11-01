@@ -8,7 +8,7 @@ cat >> ~/.zshrc <<HERE
 # Direnv settings
 # 
 
-eval "$(direnv hook zsh)"
+eval "\$(direnv hook zsh)"
 
 HERE
 

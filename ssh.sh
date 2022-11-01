@@ -14,7 +14,7 @@ cat >> ~/.zshrc <<HERE
 # SSH settings
 # 
 
-eval \$\(ssh-agent\)
+eval \$(ssh-agent)
 
 HERE
 

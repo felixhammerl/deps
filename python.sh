@@ -26,21 +26,21 @@ function auto_active_env() {
 
   ## If env folder is found then activate the vitualenv
   function activate_venv() {
-    if [[ -f "${DEFAULT_ENV_PATH}/bin/activate" ]] ; then 
-      source "${DEFAULT_ENV_PATH}/bin/activate"
-      echo "Activating ${VIRTUAL_ENV}"
+    if [[ -f "\${DEFAULT_ENV_PATH}/bin/activate" ]] ; then 
+      source "\${DEFAULT_ENV_PATH}/bin/activate"
+      echo "Activating \${VIRTUAL_ENV}"
     fi
   }
 
-  if [[ -z "$VIRTUAL_ENV" ]] ; then
+  if [[ -z "\$VIRTUAL_ENV" ]] ; then
     activate_venv
   else
     ## check the current folder belong to earlier VIRTUAL_ENV folder
     # if yes then do nothing
     # else deactivate then run a new env folder check
-      parentdir="$(dirname ${VIRTUAL_ENV})"
-      if [[ "$PWD"/ != "$parentdir"/* ]] ; then
-        echo "Deactivating ${VIRTUAL_ENV}"
+      parentdir="\$(dirname \${VIRTUAL_ENV})"
+      if [[ "\$PWD"/ != "\$parentdir"/* ]] ; then
+        echo "Deactivating \${VIRTUAL_ENV}"
         deactivate
         activate_venv
       fi
@@ -50,9 +50,9 @@ chpwd_functions=(${chpwd_functions[@]} "auto_active_env")
 
 export PYTHONBREAKPOINT="pudb.set_trace"
 export PIPENV_VENV_IN_PROJECT=true
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+export PYENV_ROOT="\$HOME/.pyenv"
+export PATH="\$PYENV_ROOT/bin:\$PATH"
+eval "\$(pyenv init --path)"
 
 HERE
 

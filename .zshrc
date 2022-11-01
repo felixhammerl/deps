@@ -7,5 +7,5 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias ls='ls -lGFh'
-autoload -Uz compinit && compinit
+autoload -U compinit && compinit
 

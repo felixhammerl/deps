@@ -16,7 +16,7 @@ cat >> ~/.zshrc <<HERE
 # Rust settings
 # 
 
-export PATH=~/.cargo/bin:${PATH}
+export PATH=~/.cargo/bin:\${PATH}
 
 HERE
 

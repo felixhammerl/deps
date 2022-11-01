@@ -15,8 +15,8 @@ cat >> ~/.zshrc <<HERE
 # 
 
 
-echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.zshrc
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+eval "\$(/opt/homebrew/bin/brew shellenv)"
 
 HERE
 
@@ -40,7 +40,6 @@ brew install inkscape
 brew install iterm2
 brew install karabiner-elements
 brew install ledger-live
-brew install owasp-zap
 brew install postman
 brew install signal
 brew install spotify
@@ -58,12 +57,10 @@ echo "Installing dependencies..."
 brew install ack
 brew install awscli
 brew install bash
-
 brew install docker
 brew install docker-compose
 brew install lima
 brew install colima
-
 brew install coreutils
 brew install curl
 brew install direnv
@@ -77,6 +74,7 @@ brew install gradle
 brew install grep
 brew install jq
 brew install kubernetes-cli
+brew install mitmproxy
 brew install n
 brew install neovim
 brew install nmap
@@ -86,9 +84,9 @@ brew install pv
 brew enstall pyenv
 brew install ruby
 brew install rbenv
+brew install shellcheck
 brew install svn
 brew install terraform
-brew install thefuck
 brew install tmate
 brew install tmux
 brew install watch
