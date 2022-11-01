@@ -17,5 +17,16 @@ npm install -g standard
 npm install -g npm-check-updates
 npm install -g yarn
 
+cat >> ~/.zshrc <<HERE
+
+#
+# Node settings
+# 
+
+
+
+HERE
+
+
 echo "Done!"
 

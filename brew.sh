@@ -2,11 +2,24 @@
 
 # echo "Uninstalling old version ..."
  
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 
 # echo "Installing brew..."
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+cat >> ~/.zshrc <<HERE
+
+#
+# Homebrew settings
+# 
+
+
+echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.zshrc
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+
+HERE
+
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

@@ -10,4 +10,14 @@ rustup update
 rustup component add rls-preview rust-analysis rust-src
 rustup show
 
+cat >> ~/.zshrc <<HERE
+
+#
+# Rust settings
+# 
+
+export PATH=~/.cargo/bin:${PATH}
+
+HERE
+
 echo "Done!"

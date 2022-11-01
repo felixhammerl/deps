@@ -1,8 +1,18 @@
 #!/usr/bin/env zsh
 
-echo "Installing rbenv ..."
+echo "Configuring rbenv ..."
 
 rbenv init
+
+cat >> ~/.zshrc <<HERE
+
+#
+# Ruby settings
+# 
+
+eval "$(rbenv init -)"
+
+HERE
 
 echo "Done!"
 
