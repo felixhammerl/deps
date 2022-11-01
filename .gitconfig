@@ -17,4 +17,4 @@
 [help]
     autocorrect = 0
 [commit]
-    gpgsign = true
+	gpgsign = true

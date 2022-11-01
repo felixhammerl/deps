@@ -77,9 +77,7 @@ brew install nmap
 brew install perl
 brew install pinentry-mac
 brew install pv
-brew install python@3
-brew install pipenv
-brew install pyenv
+brew enstall pyenv
 brew install ruby
 brew install rbenv
 brew install svn
