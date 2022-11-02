@@ -4,11 +4,12 @@ echo "Installing rust..."
 
 curl https://sh.rustup.rs -sSf | sh
 
-rustup install nightly
-rustup default nightly
+source "$HOME/.cargo/env"
+
 rustup update
 rustup component add rls-preview rust-analysis rust-src
 rustup show
+
 
 cat >> ~/.zshrc <<HERE
 
@@ -16,7 +17,7 @@ cat >> ~/.zshrc <<HERE
 # Rust settings
 # 
 
-export PATH=~/.cargo/bin:\${PATH}
+source "\$HOME/.cargo/env"
 
 HERE
 
