@@ -7,18 +7,18 @@ echo "Welcome to the grand environment setup extravaganza."
 DIR=$(cd "$(dirname "$0")"; pwd)
 echo "working relative to $DIR"
 
-"$DIR"/macos.sh
-"$DIR"/shell.sh
-"$DIR"/brew.sh && source "$HOME/.zshrc"
-"$DIR"/ssh.sh && source "$HOME/.zshrc"
-"$DIR"/direnv.sh && source "$HOME/.zshrc"
-"$DIR"/git.sh && source "$HOME/.zshrc"
-"$DIR"/gpg.sh && source "$HOME/.zshrc"
-"$DIR"/neovim.sh && source "$HOME/.zshrc"
-"$DIR"/node.sh && source "$HOME/.zshrc"
-"$DIR"/python.sh && source "$HOME/.zshrc"
-"$DIR"/ruby.sh && source "$HOME/.zshrc"
-"$DIR"/rust.sh && source "$HOME/.zshrc"
-"$DIR"/tmux.sh && source "$HOME/.zshrc"
-"$DIR"/vscode.sh && source "$HOME/.zshrc"
+("$DIR"/macos.sh)
+("$DIR"/shell.sh)
+(source "$HOME/.zshrc" && "$DIR"/brew.sh)
+(source "$HOME/.zshrc" && "$DIR"/ssh.sh)
+(source "$HOME/.zshrc" && "$DIR"/direnv.sh)
+(source "$HOME/.zshrc" && "$DIR"/git.sh)
+(source "$HOME/.zshrc" && "$DIR"/gpg.sh)
+(source "$HOME/.zshrc" && "$DIR"/neovim.sh)
+(source "$HOME/.zshrc" && "$DIR"/node.sh)
+(source "$HOME/.zshrc" && "$DIR"/python.sh)
+(source "$HOME/.zshrc" && "$DIR"/ruby.sh)
+(source "$HOME/.zshrc" && "$DIR"/rust.sh)
+(source "$HOME/.zshrc" && "$DIR"/tmux.sh)
+(source "$HOME/.zshrc" && "$DIR"/vscode.sh)
 
