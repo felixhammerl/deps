@@ -3,8 +3,8 @@
 echo "Configuring ssh ..."
 
 mkdir -p ~/.ssh
-# mv ssh-config ~/.ssh/config
-# touch ~/.ssh/authorized_keys
+mv ssh-config ~/.ssh/config
+touch ~/.ssh/authorized_keys
 
 cd ~/.ssh
 
