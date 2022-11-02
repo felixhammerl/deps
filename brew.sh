@@ -81,7 +81,7 @@ brew install nmap
 brew install perl
 brew install pinentry-mac
 brew install pv
-brew enstall pyenv
+brew install pyenv
 brew install ruby
 brew install rbenv
 brew install shellcheck
