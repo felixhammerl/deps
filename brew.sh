@@ -23,9 +23,14 @@ HERE
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# echo "Installing brew casks..."
+echo "Tapping..."
 
 brew tap homebrew/cask
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
+
+echo "Installing applications..."
+
 brew install 1password
 brew install 1password-cli
 brew install android-file-transfer
@@ -44,8 +49,6 @@ brew install postman
 brew install signal
 brew install spotify
 brew install sublime-text
-brew install tunnelblick
-brew install virtualbox
 brew install visual-studio-code
 brew install vlc
 brew install yubico-authenticator
@@ -102,7 +105,6 @@ $(brew --prefix)/opt/fzf/install
 
 echo "Installing fonts ..."
 
-brew tap homebrew/cask-fonts
 brew install font-fira-code
 brew install font-fira-mono
 brew install font-fira-sans

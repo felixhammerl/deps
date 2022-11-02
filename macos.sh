@@ -13,10 +13,12 @@ sudo softwareupdate --install-rosetta
 
 FILEVAULT_STATUS=$(fdesetup status)
 if [[ $FILEVAULT_STATUS != "FileVault is On." ]]; then
-  echo "FileVault is not turned on. Please encrypt your hard disk!"
+  echo "##############################################################"
+  echo "# FileVault is not turned on. Please encrypt your hard disk! #"
+  echo "##############################################################"
 fi
 
 echo "Creating projects folder"
-mkdir -p ~/projects
+mkdir -p ~/Projects
 
 echo "Done!"
