@@ -6,6 +6,8 @@ pyenv install 3.8.14
 pyenv install 3.10.7
 
 pyenv global 3.8.14
+
+eval "$(pyenv init --path)"
 pip install --upgrade pip pipenv virtualenv
 
 cat >> ~/.zshrc <<HERE
