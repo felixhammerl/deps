@@ -20,8 +20,8 @@ cp coc-settings.json ~/.config/nvim/coc-settings.json
 cp python.snippets ~/.config/coc/ultisnips/python.snippets
 
 echo "Replacing vim with neovim"
-sudo ln -s /opt/homebrew/bin/nvim /usr/local/bin/vi
-sudo ln -s /opt/homebrew/bin/nvim /usr/local/bin/vim
+sudo ln -sf /opt/homebrew/bin/nvim /usr/local/bin/vi
+sudo ln -sf /opt/homebrew/bin/nvim /usr/local/bin/vim
 
 echo "Creating pynvim venv"
 mkdir -p ~/.virtualenv
