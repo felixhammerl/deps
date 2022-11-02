@@ -5,14 +5,6 @@ set -eu
 echo "Cleaning up pre-flight"
 rm -rfv ~/.config/nvim
 
-echo "Creating pynvim venv"
-mkdir -p ~/.virtualenv
-cd ~/.virtualenv
-python -m venv ./neovim
-source neovim/bin/activate
-pip install --upgrade pynvim
-deactivate
-
 echo "Creating dirs"
 mkdir -p ~/.config/nvim
 mkdir -p ~/.nvim/undo
@@ -28,5 +20,13 @@ cp python.snippets ~/.config/coc/ultisnips/python.snippets
 echo "Replacing vim with neovim"
 ln -s /opt/homebrew/bin/nvim /usr/local/bin/vi
 ln -s /opt/homebrew/bin/nvim /usr/local/bin/vim
+
+echo "Creating pynvim venv"
+mkdir -p ~/.virtualenv
+cd ~/.virtualenv
+python -m venv ./neovim
+source neovim/bin/activate
+pip install --upgrade pynvim
+deactivate
 
 echo "done!"

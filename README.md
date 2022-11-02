@@ -17,7 +17,6 @@ Execution:
 ./rust.sh
 ./ruby.sh
 ./neovim.sh
-./neovim.sh
 ./vscode.sh
 ```
 Some scripts require you to reinitialize your shell session to update path, env vars, etc. It is recommended to execute the scripts step by step for this reason.
