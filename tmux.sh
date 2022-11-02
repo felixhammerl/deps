@@ -4,7 +4,7 @@ set -eu
 
 echo "Configuring tmux..."
 
-cp $DIR/.tmux.conf ~
-cp $DIR/.tmate.conf ~
+cp .tmux.conf ~
+cp .tmate.conf ~
 
 echo "Done!"
