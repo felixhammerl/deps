@@ -22,7 +22,7 @@ zsh_prompt_parse_git_branch() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] %~ %{%F{green}%}$(zsh_prompt_parse_git_branch)%{%F{none}%}
+PROMPT='%{\$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] %~ %{%F{green}%}\$(zsh_prompt_parse_git_branch)%{%F{none}%}
 > '
 
 HERE
