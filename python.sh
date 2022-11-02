@@ -2,10 +2,10 @@
 
 echo "Installing python dependencies..."
 
-pyenv install 3.8.0
-pyenv install 3.10.0
+pyenv install 3.8.14
+pyenv install 3.10.7
 
-pyenv global 3.8.0
+pyenv global 3.8.14
 pip install --upgrade pip pipenv virtualenv
 
 cat >> ~/.zshrc <<HERE
