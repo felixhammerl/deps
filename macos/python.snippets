@@ -1,0 +1,41 @@
+{
+snippet mts "Test Suite"
+# pyright: reportWildcardImportFromLibrary=false
+from hamcrest import *
+
+def test_$1():
+    $2
+endsnippet
+
+snippet mtc "Test Function"
+def test_$1($2):
+    $3
+endsnippet
+
+snippet tro "Test Run Only"
+import pytest
+@pytest.mark.only
+endsnippet
+
+snippet tas "Test Assert Stage"
+import os
+import pytest
+STAGE = os.getenv("STAGE")
+if STAGE != "dev":,
+    pytest.fail(msg="Test must be run in STAGE=dev")
+endsnippet
+
+snippet ccl "Hamcrest Contains List"
+assert_that($1, contains_inanyorder(*$2))
+endsnippet
+
+snippet cnn "Hamcrest Not None"
+assert_that($1, is_(not_none()))
+endsnippet
+
+snippet ceq "Hamcrest Equality"
+assert_that($1, is_(equal_to($2)))
+endsnippet
+}
+
+

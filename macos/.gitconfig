@@ -1,0 +1,20 @@
+[user]
+    name = Felix Hammerl
+    email = felix.hammerl@gmail.com
+    signingkey = 7859E6520888D02E
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[core]
+    editor = vim
+[push]
+    default = simple
+[pull]
+    rebase = true
+[help]
+    autocorrect = 0
+[commit]
+	gpgsign = true

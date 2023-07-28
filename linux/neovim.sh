@@ -19,14 +19,10 @@ cp init.vim ~/.config/nvim/init.vim
 cp coc-settings.json ~/.config/nvim/coc-settings.json
 cp python.snippets ~/.config/coc/ultisnips/python.snippets
 
-echo "Replacing vim with neovim"
-sudo ln -sf /opt/homebrew/bin/nvim /usr/local/bin/vi
-sudo ln -sf /opt/homebrew/bin/nvim /usr/local/bin/vim
-
 echo "Creating pynvim venv"
 mkdir -p ~/.virtualenv
 cd ~/.virtualenv
-python -m venv ./neovim
+python3 -m venv ./neovim
 source neovim/bin/activate
 pip install --upgrade pynvim
 deactivate
