@@ -34,3 +34,6 @@ function kill_gpg() {
 
 HERE
 
+sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts/
+cp ff-gpgmejson.json > /usr/lib/mozilla/native-messaging-hosts/gpgmejson.json
+

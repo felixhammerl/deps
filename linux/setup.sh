@@ -7,6 +7,13 @@ echo "Welcome to the grand environment setup extravaganza."
 DIR=$(cd "$(dirname "$0")"; pwd)
 echo "working relative to $DIR"
 
+if [ -n "$ZSH_VERSION" ]; then
+  echo "We're running in zsh, continuing..."
+else
+  echo "Change your shell to zsh first!"
+  exit 1
+fi
+
 read -r "should_continue?Do you want to set up your system from scratch? [y/n]" 
 if [[ "$should_continue" =~ ^[Yy]$ ]]
 then
