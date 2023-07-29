@@ -4,7 +4,7 @@ set -eu
 
 echo "Installing dependencies ..."
 
-sudo apt install scdaemon
+sudo apt install scdaemon gpgme-json
 
 echo "Configuring GPG..."
 
@@ -35,5 +35,8 @@ function kill_gpg() {
 HERE
 
 sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts/
-cp ff-gpgmejson.json > /usr/lib/mozilla/native-messaging-hosts/gpgmejson.json
-
+sudo mkdir -p /etc/chromium/native-messaging-hosts/
+sudo mkdir -p /etc/opt/chrome/native-messaging-hosts/
+sudo cp ff-gpgmejson.json > /usr/lib/mozilla/native-messaging-hosts/gpgmejson.json
+sudo cp chrome-gpgmejson.json /etc/chromium/native-messaging-hosts/gpgmejson.json
+sudo cp chrome-gpgmejson.json /etc/opt/chrome/native-messaging-hosts/gpgmejson.json
