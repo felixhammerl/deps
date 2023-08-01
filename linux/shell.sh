@@ -10,4 +10,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 cp .zshrc ~/.zshrc
 
+cat >> ~/.profile <<HERE
+
+setxkbmap -option caps:swapescape
+
+HERE
+
+
 echo "Done!"
