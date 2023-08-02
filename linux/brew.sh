@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 sudo apt update
+sudp apt upgrade
 
 sudo apt install apt-transport-https
 

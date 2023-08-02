@@ -6,9 +6,19 @@ echo "Configuring shell..."
 
 sudo apt install curl
 
+touch ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cp .zshrc ~/.zshrc
+cat >> ~/.zshrc <<HERE
+
+#
+# Shell settings
+# 
+
+alias ls='ls -lGFh'
+
+HERE
+
 
 cat >> ~/.profile <<HERE
 
