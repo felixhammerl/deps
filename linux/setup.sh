@@ -24,6 +24,7 @@ fi
 
 ("$DIR"/shell.sh)
 (source "$HOME/.zshrc" && "$DIR"/brew.sh)
+(source "$HOME/.zshrc" && "$DIR"/gnome.sh)
 (source "$HOME/.zshrc" && "$DIR"/ssh.sh)
 (source "$HOME/.zshrc" && "$DIR"/direnv.sh)
 (source "$HOME/.zshrc" && "$DIR"/git.sh)
