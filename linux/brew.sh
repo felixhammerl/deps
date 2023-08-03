@@ -20,7 +20,8 @@ sudo apt install \
   rbenv \
   yubikey-manager \
   yubikey-manager-qt \
-  yubioath-desktop
+  yubioath-desktop \
+  gnome-shell-extensions
 
 echo "Please install via their homepage: Dropbox, Zoom"
 
