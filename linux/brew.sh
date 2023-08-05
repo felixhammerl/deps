@@ -21,7 +21,8 @@ sudo apt install \
   yubikey-manager \
   yubikey-manager-qt \
   yubioath-desktop \
-  gnome-shell-extensions
+  gnome-shell-extensions \
+  whois
 
 echo "Please install via their homepage: Dropbox, Zoom"
 
