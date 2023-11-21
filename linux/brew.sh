@@ -22,7 +22,8 @@ sudo apt install \
   yubikey-manager-qt \
   yubioath-desktop \
   gnome-shell-extensions \
-  whois
+  whois \
+  libpam-u2f
 
 echo "Please install via their homepage: Dropbox, Zoom"
 
