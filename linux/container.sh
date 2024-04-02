@@ -9,8 +9,12 @@ sudo usermod -aG docker $USER
 
 echo "Enabling docker in systemd"
 
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now containerd
+sudo systemctl enable --now docker
+
+sudo systemctl status containerd
+sudo systemctl status docker
 
 echo "Installing nerdctl..."
 
