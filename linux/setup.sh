@@ -27,6 +27,7 @@ chmod 700 $HOME/bin
 
 ("$DIR"/shell.sh)
 (source "$HOME/.zshrc" && "$DIR"/apt.sh)
+(source "$HOME/.zshrc" && "$DIR"/container.sh)
 (source "$HOME/.zshrc" && "$DIR"/yubikey.sh)
 (source "$HOME/.zshrc" && "$DIR"/gnome.sh)
 (source "$HOME/.zshrc" && "$DIR"/ssh.sh)
