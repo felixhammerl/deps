@@ -38,7 +38,7 @@ sudo mkdir -p /opt/cni/bin/
 download_url="https://github.com/containernetworking/plugins/releases"
 echo "Go to $download_url and get the latest version"
 
-read -r "version?Latest stable Nerdctl version: "
+read -r "version?Latest stable version: "
 filename="cni-plugins-linux-amd64-v$version.tgz"
 wget "$download_url/download/v$version/$filename"
 
