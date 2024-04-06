@@ -9,7 +9,6 @@ sudo apt install \
   ca-certificates \
   curl \
   direnv \
-  fzf \
   git \
   gnome-shell-extensions \
   gnupg \
