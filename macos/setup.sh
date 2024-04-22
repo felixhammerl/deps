@@ -29,4 +29,5 @@ fi
 (source "$HOME/.zshrc" && "$DIR"/rust.sh)
 (source "$HOME/.zshrc" && "$DIR"/tmux.sh)
 (source "$HOME/.zshrc" && "$DIR"/vscode.sh)
+(source "$HOME/.zshrc" && "$DIR"/container.sh)
 

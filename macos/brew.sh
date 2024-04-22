@@ -57,7 +57,6 @@ brew install ballast
 brew install bash
 brew install bruno
 brew install burp-suite
-brew install colima
 brew install coreutils
 brew install curl
 brew install cyberduck
@@ -73,9 +72,9 @@ brew install gimp
 brew install git
 brew install gnu-sed
 brew install gnupg
-nrew install gopass
 brew install google-chat
 brew install google-chrome
+brew install gopass
 brew install gradle
 brew install grep
 brew install hiddenbar
@@ -94,11 +93,12 @@ brew install n
 brew install neovim
 brew install nmap
 brew install perl
-brew install pipenv
 brew install pinentry-mac
+brew install pipenv
 brew install postman
 brew install pv
 brew install pyenv
+brew install rancher
 brew install rbenv
 brew install ruby
 brew install shellcheck
@@ -122,6 +122,7 @@ brew install yubico-yubikey-manager
 brew install zlib
 brew install zoom
 brew install zsh-completions
+nrew install gopass
 
 echo "Post-install hooks..."
 
