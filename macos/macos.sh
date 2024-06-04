@@ -4,12 +4,11 @@ set -eu
 
 echo "Preparing macOS..."
 
-/usr/bin/xcode-select -p > /dev/null 2>&1
-if [ $# != 0 ]; then
-  xcode-select --install
-fi
+xcode-select --install
 
-sudo softwareupdate --install-rosetta
+echo "\n\n" 
+
+read -q "BLA?Press enter to continue when Xcode is done installing..."
 
 FILEVAULT_STATUS=$(fdesetup status)
 if [[ $FILEVAULT_STATUS != "FileVault is On." ]]; then
