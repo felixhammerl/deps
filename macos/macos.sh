@@ -5,6 +5,7 @@ set -eu
 echo "Preparing macOS..."
 
 xcode-select --install
+softwareupdate --install-rosetta
 
 echo "\n\n" 
 
