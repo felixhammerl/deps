@@ -23,12 +23,6 @@ HERE
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo "Tapping..."
-
-brew tap homebrew/cask
-brew tap homebrew/cask-drivers
-brew tap homebrew/cask-fonts
-
 echo "Installing applications..."
 
 brew install 1password
@@ -39,7 +33,6 @@ brew install burp-suite
 brew install dropbox
 brew install firefox
 brew install gimp
-brew install google-chat
 brew install google-chrome
 brew install inkscape
 brew install iterm2
@@ -49,6 +42,7 @@ brew install postman
 brew install signal
 brew install spotify
 brew install sublime-text
+brew install utm
 brew install visual-studio-code
 brew install vlc
 brew install yubico-authenticator
