@@ -23,31 +23,8 @@ HERE
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo "Installing applications..."
+echo "Installing applications and dependencies..."
 
-brew install 1password
-brew install 1password-cli
-brew install android-file-transfer
-brew install ballast
-brew install burp-suite
-brew install dropbox
-brew install firefox
-brew install gimp
-brew install google-chrome
-brew install inkscape
-brew install iterm2
-brew install karabiner-elements
-brew install ledger-live
-brew install postman
-brew install signal
-brew install spotify
-brew install sublime-text
-brew install utm
-brew install visual-studio-code
-brew install vlc
-brew install yubico-authenticator
-brew install yubico-yubikey-manager
-brew install zoom
 brew install 1password
 brew install 1password-cli
 brew install ack
@@ -111,6 +88,7 @@ brew install terraform
 brew install terraform-ls
 brew install tmate
 brew install tmux
+brew install utm
 brew install visual-studio-code
 brew install vlc
 brew install watch
@@ -122,11 +100,6 @@ brew install yubico-yubikey-manager
 brew install zlib
 brew install zoom
 brew install zsh-completions
-nrew install gopass
-
-echo "Post-install hooks..."
-
-$(brew --prefix)/opt/fzf/install
 
 echo "Installing fonts ..."
 
@@ -139,5 +112,9 @@ brew install font-roboto
 brew install font-roboto-mono
 brew install font-roboto-slab
 brew install font-source-code-pro
+
+echo "Post-install hooks..."
+
+$(brew --prefix)/opt/fzf/install
 
 echo "Done!"
