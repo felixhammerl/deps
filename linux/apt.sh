@@ -5,12 +5,18 @@ sudp apt upgrade -y
 
 sudo apt install -y apt-transport-https
 
+echo "Installing oh-my-zsh"
+
+touch ~/.zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 sudo apt install -y \
   ca-certificates \
   ack \
   curl \
   direnv \
   git \
+  gnome-tweaks \
   gnome-shell-extensions \
   gnupg \
   gpg-agent \
