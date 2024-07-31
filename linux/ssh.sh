@@ -48,7 +48,8 @@ then
   key_name=${key_name:=id_ecdsa_sk}
 
   ssh-keygen -K
-  mv id_ecdsa_sk_rk "~/.ssh/$key_name"
+  mv id_ecdsa_sk_rk "$key_name"
+  mv id_ecdsa_sk_rk.pub "$key_name.pub"
 
   echo "ssh-add \"\$HOME/.ssh/$key_name\"" >> ~/.zshrc
   echo "    IdentityFile ~/.ssh/$key_name" >> ~/.ssh/config

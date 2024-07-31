@@ -1,11 +1,11 @@
 #!/usr/bin/env zsh
 
 sudo apt update
-sudp apt upgrade
+sudp apt upgrade -y
 
-sudo apt install apt-transport-https
+sudo apt install -y apt-transport-https
 
-sudo apt install \
+sudo apt install -y \
   ca-certificates \
   curl \
   direnv \
@@ -30,6 +30,14 @@ sudo apt install \
   yubikey-manager \
   yubikey-manager-qt \
   yubioath-desktop
+
+echo "Installing n..."
+
+curl -L https://bit.ly/n-install | bash
+
+echo "Installing python dependencies..."
+
+sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev python3-pip
 
 echo "Please install via their homepage: Dropbox, Zoom"
 

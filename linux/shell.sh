@@ -1,10 +1,10 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 set -eu
 
 echo "Configuring shell..."
 
-sudo apt install curl
+sudo apt install -y curl
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install

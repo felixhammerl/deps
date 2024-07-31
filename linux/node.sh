@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-echo "Installing node..."
-
-curl -L https://bit.ly/n-install | bash
-
 n latest
 
 echo "Installing node modules..."

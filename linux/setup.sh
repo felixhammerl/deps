@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 set -eu
 
@@ -11,6 +11,9 @@ if [ -n "$ZSH_VERSION" ]; then
   echo "We're running in zsh, continuing..."
 else
   echo "Change your shell to zsh first!"
+  sudo apt install -y zsh
+  chsh -s $(which zsh)
+
   exit 1
 fi
 

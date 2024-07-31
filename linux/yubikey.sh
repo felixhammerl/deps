@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env zsh
 
 #
 # Lock screen when Yubikey is removed
