@@ -7,6 +7,7 @@ sudo apt install -y apt-transport-https
 
 sudo apt install -y \
   ca-certificates \
+  ack \
   curl \
   direnv \
   git \
@@ -29,7 +30,8 @@ sudo apt install -y \
   whois \
   yubikey-manager \
   yubikey-manager-qt \
-  yubioath-desktop
+  yubioath-desktop \
+  python3.12-venv
 
 echo "Installing n..."
 
@@ -38,6 +40,7 @@ curl -L https://bit.ly/n-install | bash
 echo "Installing python dependencies..."
 
 sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev python3-pip
+curl https://pyenv.run | bash
 
 echo "Please install via their homepage: Dropbox, Zoom"
 
@@ -51,18 +54,18 @@ sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
 curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
 sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
-sudo apt update && sudo apt install 1password
+sudo apt update && sudo apt install -y 1password
 
 # Sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update && sudo apt install sublime-text
+sudo apt update && sudo apt install -y sublime-text
 
 # Signal
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
 cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' | sudo tee /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update && sudo apt install signal-desktop
+sudo apt update && sudo apt install -y signal-desktop
 
 # Containerd
 sudo apt-get install  curl

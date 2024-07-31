@@ -37,6 +37,6 @@ HERE
 sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts/
 sudo mkdir -p /etc/chromium/native-messaging-hosts/
 sudo mkdir -p /etc/opt/chrome/native-messaging-hosts/
-sudo cp ff-gpgmejson.json > /usr/lib/mozilla/native-messaging-hosts/gpgmejson.json
+sudo cp ff-gpgmejson.json /usr/lib/mozilla/native-messaging-hosts/gpgmejson.json
 sudo cp chrome-gpgmejson.json /etc/chromium/native-messaging-hosts/gpgmejson.json
 sudo cp chrome-gpgmejson.json /etc/opt/chrome/native-messaging-hosts/gpgmejson.json

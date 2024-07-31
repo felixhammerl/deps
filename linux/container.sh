@@ -4,7 +4,7 @@ set -eu
 
 echo "Configuring docker for use without sudo..."
 
-sudo groupadd docker
+sudo groupadd -f docker
 sudo usermod -aG docker $USER
 
 echo "Enabling docker in systemd"

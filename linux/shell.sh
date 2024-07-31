@@ -1,17 +1,12 @@
-#!/usr/bin/env bash
-
-set -eu
+#!/usr/bin/env zsh
 
 echo "Configuring shell..."
 
-sudo apt install -y curl
-
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-
+(~/.fzf/install)
 
 touch ~/.zshrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 cat >> ~/.zshrc <<HERE
 
@@ -32,3 +27,5 @@ HERE
 
 
 echo "Done!"
+
+

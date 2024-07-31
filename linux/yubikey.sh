@@ -21,8 +21,6 @@ read -r "should_continue?Do you want to set up another Yubikey? [y/n]"
 if [[ "$should_continue" =~ ^[Yy]$ ]]
 then
   pamu2fcfg -n >> ~/.config/Yubico/u2f_keys
-else
-  break
 fi
 
 echo ""
@@ -31,7 +29,8 @@ echo "Add the line below before the @include common-auth line."
 echo "auth       sufficient   pam_u2f.so cue"
 echo ""
 
-read -p "Press Enter to continue" </dev/tty
+echo "Press Enter to continue"
+read -n 1
 
 echo ""
 echo "Open sudo vim /etc/pam.d/su"
@@ -39,7 +38,8 @@ echo "Add the line below before the @include common-auth line."
 echo "auth       sufficient   pam_u2f.so cue"
 echo ""
 
-read -p "Press Enter to continue" </dev/tty
+echo "Press Enter to continue"
+read -n 1
 
 echo ""
 echo "Open sudo vim /etc/pam.d/login"
@@ -47,7 +47,8 @@ echo "Add the line below before the @include common-auth line."
 echo "auth       sufficient   pam_u2f.so"
 echo ""
 
-read -p "Press Enter to continue" </dev/tty
+echo "Press Enter to continue"
+read -n 1
 
 echo ""
 echo "Open sudo vim /etc/pam.d/gdm-password"
@@ -55,7 +56,8 @@ echo "Add the line below before the @include common-auth line."
 echo "auth       sufficient   pam_u2f.so cue"
 echo ""
 
-read -p "Press Enter to continue" </dev/tty
+echo "Press Enter to continue"
+read -n 1
 
 
 echo "Done!"
