@@ -45,6 +45,7 @@ set selection=exclusive
 
 " use system clipboard
 set clipboard=unnamed
+set clipboard=unnamedplus
 
 " use hybrid line numbers
 set number relativenumber
