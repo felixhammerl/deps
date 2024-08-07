@@ -49,6 +49,7 @@ brew install gimp
 brew install git
 brew install gnu-sed
 brew install gnupg
+brew install go
 brew install google-chat
 brew install google-chrome
 brew install gopass
@@ -59,6 +60,7 @@ brew install htop
 brew install hydra
 brew install inkscape
 brew install iterm2
+brew install java
 brew install jq
 brew install karabiner-elements
 brew install kubernetes-cli

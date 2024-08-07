@@ -22,6 +22,7 @@ fi
 (source "$HOME/.zshrc" && "$DIR"/direnv.sh)
 (source "$HOME/.zshrc" && "$DIR"/git.sh)
 (source "$HOME/.zshrc" && "$DIR"/gpg.sh)
+(source "$HOME/.zshrc" && "$DIR"/java.sh)
 (source "$HOME/.zshrc" && "$DIR"/node.sh)
 (source "$HOME/.zshrc" && "$DIR"/python.sh)
 (source "$HOME/.zshrc" && "$DIR"/neovim.sh)
