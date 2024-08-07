@@ -19,6 +19,7 @@ sudo apt install -y \
   gnome-tweaks \
   gnome-shell-extensions \
   gnupg \
+  golang-go \
   gpg-agent \
   gpgme-json \
   jq \
