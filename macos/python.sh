@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+echo "Installing poetry ..."
+
+curl -sSL https://install.python-poetry.org | python3 -
+
 echo "Installing python dependencies..."
 
 pyenv install 3.8.14
@@ -54,6 +58,7 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 export PIPENV_VENV_IN_PROJECT=true
 export PYENV_ROOT="\$HOME/.pyenv"
 export PATH="\$PYENV_ROOT/bin:\$PATH"
+export PATH="\$HOME/.local/bin:\$PATH"
 eval "\$(pyenv init --path)"
 
 HERE
