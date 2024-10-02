@@ -25,6 +25,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
+Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 call plug#end()
 
@@ -175,3 +178,8 @@ let g:coc_global_extensions = [
 	\ 'coc-snippets'
 \ ]
 
+lua << EOF
+require("CopilotChat").setup {
+  context = buffers
+}
+EOF
