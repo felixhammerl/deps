@@ -7,6 +7,9 @@ echo "Preparing macOS..."
 xcode-select --install
 softwareupdate --install-rosetta
 
+echo "Do not write .DS_Store files on network volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 echo "\n\n" 
 
 read -q "BLA?Press enter to continue when Xcode is done installing..."
