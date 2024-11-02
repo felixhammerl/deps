@@ -1,6 +1,10 @@
 #!/usr/bin/env zsh
 
-n latest
+echo "Installing node latest and LTS..."
+
+nvm install node
+nvm install --lts
+nvm use node
 
 echo "Installing node modules..."
 

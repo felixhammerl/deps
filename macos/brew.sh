@@ -68,7 +68,6 @@ brew install ledger-live
 brew install libmagic
 brew install lima
 brew install mitmproxy
-brew install n
 brew install neovim
 brew install nmap
 brew install perl
@@ -118,5 +117,9 @@ brew install font-source-code-pro
 echo "Post-install hooks..."
 
 $(brew --prefix)/opt/fzf/install
+
+echo "Installing nvm..."
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 echo "Done!"

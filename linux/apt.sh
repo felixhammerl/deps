@@ -40,9 +40,9 @@ sudo apt install -y \
   yubioath-desktop \
   python3.12-venv
 
-echo "Installing n..."
+echo "Installing nvm..."
 
-curl -L https://bit.ly/n-install | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 echo "Installing python dependencies..."
 
