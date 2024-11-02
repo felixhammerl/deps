@@ -10,6 +10,7 @@ echo "Installing node modules..."
 
 npm install -g standard
 npm install -g npm-check-updates
+npm install -g typescript
 
 echo "Done!"
 
