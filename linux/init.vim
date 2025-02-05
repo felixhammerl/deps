@@ -27,7 +27,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'main' }
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -48,7 +49,6 @@ set selection=exclusive
 
 " use system clipboard
 set clipboard=unnamed
-set clipboard=unnamedplus
 
 " use hybrid line numbers
 set number relativenumber
