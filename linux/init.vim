@@ -24,6 +24,7 @@ Plug 'alvan/vim-closetag'
 Plug 'stephpy/vim-yaml'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'

@@ -106,13 +106,17 @@ echo "Installing fonts ..."
 
 brew install font-fira-code
 brew install font-fira-mono
+brew install font-fira-code-nerd-font
+brew install font-fira-mono-nerd-font
 brew install font-fira-sans
 brew install font-open-sans
 brew install font-open-sans-condensed
 brew install font-roboto
 brew install font-roboto-mono
+brew install font-roboto-mono-nerd-font
 brew install font-roboto-slab
 brew install font-source-code-pro
+brew install font-sauce-code-pro-nerd-font
 
 echo "Post-install hooks..."
 
