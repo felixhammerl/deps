@@ -19,6 +19,7 @@ mkdir -p $HOME/bin
 chmod 700 $HOME/bin
 
 (source "$HOME/.zshrc" && "$DIR"/apt.sh)
+(source "$HOME/.zshrc" && "$DIR"/fonts.sh)
 (source "$HOME/.zshrc" && "$DIR"/shell.sh)
 (source "$HOME/.zshrc" && "$DIR"/container.sh)
 (source "$HOME/.zshrc" && "$DIR"/yubikey.sh)
@@ -28,6 +29,7 @@ chmod 700 $HOME/bin
 (source "$HOME/.zshrc" && "$DIR"/gpg.sh)
 (source "$HOME/.zshrc" && "$DIR"/node.sh)
 (source "$HOME/.zshrc" && "$DIR"/python.sh)
+(source "$HOME/.zshrc" && "$DIR"/poetry.sh)
 (source "$HOME/.zshrc" && "$DIR"/neovim.sh)
 (source "$HOME/.zshrc" && "$DIR"/ruby.sh)
 (source "$HOME/.zshrc" && "$DIR"/rust.sh)

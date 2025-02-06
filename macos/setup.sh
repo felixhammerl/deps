@@ -25,6 +25,7 @@ fi
 (source "$HOME/.zshrc" && "$DIR"/java.sh)
 (source "$HOME/.zshrc" && "$DIR"/node.sh)
 (source "$HOME/.zshrc" && "$DIR"/python.sh)
+(source "$HOME/.zshrc" && "$DIR"/poetry.sh)
 (source "$HOME/.zshrc" && "$DIR"/neovim.sh)
 (source "$HOME/.zshrc" && "$DIR"/ruby.sh)
 (source "$HOME/.zshrc" && "$DIR"/rust.sh)

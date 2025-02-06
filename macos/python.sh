@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-echo "Installing poetry ..."
-
-curl -sSL https://install.python-poetry.org | python3 -
-
 echo "Installing python dependencies..."
 
 pyenv install 3.8.14
