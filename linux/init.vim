@@ -30,6 +30,7 @@ Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
+Plug 'habamax/vim-asciidoctor'
 
 call plug#end()
 
