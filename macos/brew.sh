@@ -68,6 +68,7 @@ brew install ledger-live
 brew install libmagic
 brew install lima
 brew install mitmproxy
+brew install mullvadvpn
 brew install neovim
 brew install nmap
 brew install perl
