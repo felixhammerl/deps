@@ -46,8 +46,8 @@ set updatetime=300
 " changes causes files to be hidden instead of closed
 set hidden
 
-" do not select the line break when selecting to end of line
-set selection=exclusive
+" allows the cursor to move one position past the last character without actually selecting the line break
+set virtualedit=onemore
 
 " use system clipboard
 set clipboard=unnamed
