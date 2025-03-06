@@ -1,4 +1,8 @@
 {
   "suggest.noselect": false,
-  "python.venvPath": ".venv"
+  "python.venvPath": ".venv",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": ".venv/bin/black",
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.preferences.formatOnSave": true
 }
