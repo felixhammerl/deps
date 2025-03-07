@@ -46,7 +46,7 @@ set updatetime=300
 " changes causes files to be hidden instead of closed
 set hidden
 
-" allows the cursor to move one position past the last character without actually selecting the line break
+" do not select the line break when selecting to end of line
 set virtualedit=onemore
 
 " use system clipboard
@@ -111,6 +111,10 @@ nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gi :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
 nmap <silent> gr <Plug>(coc-references)
+
+" Run python tests
+autocmd FileType python nnoremap <buffer> ts :CocCommand pyright.singleTest<CR>
+autocmd FileType python nnoremap <buffer> ta :CocCommand pyright.fileTest<CR>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>

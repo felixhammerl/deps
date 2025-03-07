@@ -1,6 +1,7 @@
 {
   "suggest.noselect": false,
   "python.venvPath": ".venv",
+  "pyright.testing.provider": "pytest",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": ".venv/bin/black",
   "coc.preferences.formatOnSaveFiletypes": ["python"],
