@@ -23,6 +23,11 @@ HERE
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+echo "Tapping new kegs ..."
+
+brew tap mongodb/brew
+brew update
+
 echo "Installing applications and dependencies..."
 
 brew install 1password
@@ -50,7 +55,6 @@ brew install git
 brew install gnu-sed
 brew install gnupg
 brew install go
-brew install google-chat
 brew install google-chrome
 brew install gopass
 brew install gradle
@@ -64,17 +68,18 @@ brew install java
 brew install jq
 brew install karabiner-elements
 brew install kubernetes-cli
-brew install ledger-live
 brew install libmagic
 brew install lima
+brew install lsusb
 brew install mitmproxy
+brew install mongodb-community
 brew install mullvadvpn
 brew install neovim
 brew install nmap
+brew install pandoc asciidoc
 brew install perl
 brew install pinentry-mac
 brew install pipenv
-brew install postman
 brew install pv
 brew install pyenv
 brew install rancher
@@ -84,12 +89,10 @@ brew install shellcheck
 brew install signal
 brew install spotify
 brew install sublime-text
-brew install svn
 brew install tcpdump
-brew install terraform
 brew install terraform-ls
-brew install tmate
-brew install tmux
+brew install tfenv
+brew install tty-share
 brew install utm
 brew install visual-studio-code
 brew install vlc
@@ -98,7 +101,6 @@ brew install wget
 brew install ykman
 brew install yubico-authenticator
 brew install yubico-piv-tool
-brew install yubico-yubikey-manager
 brew install zlib
 brew install zoom
 brew install zsh-completions

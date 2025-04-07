@@ -16,7 +16,6 @@ nvm install node
 nvm install --lts
 nvm use node
 
-
 echo "Installing node modules..."
 
 npm install -g standard
