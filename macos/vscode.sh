@@ -4,7 +4,7 @@ set -eu
 
 echo "Installing vscode ..."
 
-rm -f /usr/local/bin/code
+sudo rm -f /usr/local/bin/code
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 mkdir -p $HOME/.config/Code/User/snippets
@@ -32,8 +32,6 @@ code --install-extension ms-python.debugpy
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension njpwerner.autodocstring
 code --install-extension redhat.java
 code --install-extension redhat.vscode-yaml
@@ -45,14 +43,6 @@ code --install-extension swiftlang.swift-vscode
 code --install-extension tamasfe.even-better-toml
 code --install-extension timonwong.shellcheck
 code --install-extension vadimcn.vscode-lldb
-code --install-extension visualstudioexptteam.intellicode-api-usage-examples
-code --install-extension visualstudioexptteam.vscodeintellicode
-code --install-extension vscjava.vscode-gradle
-code --install-extension vscjava.vscode-java-debug
-code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-maven
 code --install-extension vscodevim.vim
 code --install-extension vue.volar
 code --install-extension yzhang.markdown-all-in-one

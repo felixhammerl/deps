@@ -131,4 +131,7 @@ echo "Installing nvm..."
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
+echo "Installing oh-my-zsh..."
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
 echo "Done!"

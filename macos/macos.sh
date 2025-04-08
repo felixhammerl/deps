@@ -4,14 +4,10 @@ set -eu
 
 echo "Preparing macOS..."
 
-if command -v git >/dev/null 2>&1; then
-    echo "Installing Xcode command line tools..."
-    xcode-select --install
-    echo "Press enter to continue when Xcode is done installing..."
-    read yn
-else
-    echo "Git is already installed."
-fi
+echo "Installing Xcode command line tools..."
+xcode-select --install
+echo "Press enter to continue when Xcode is done installing..."
+read yn
 
 echo "Do not write .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
