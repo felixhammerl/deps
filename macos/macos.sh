@@ -13,10 +13,8 @@ else
     echo "Git is already installed."
 fi
 
-
 echo "Do not write .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-
 
 echo "Creating projects folder"
 mkdir -p ~/Projects

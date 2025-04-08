@@ -1,45 +1,55 @@
 {
-    "debug.console.wordWrap": false,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.minimap.enabled": false,
-    "editor.stablePeek": true,
-    "emmet.showExpandedAbbreviation": "never",
-    "explorer.confirmDragAndDrop": false,
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.pytest_cache": true,
-        "**/.venv": true,
-        "**/*.pyc": true,
-        "**/node_modules": true,
-        "**/venv": true
-    },
-    "git.confirmSync": false,
-    "git.ignoreMissingGitWarning": true,
-    "html.format.wrapLineLength": 0,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.validate.enable": false,
-    "output.smartScroll.enabled": false,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.jediEnabled": false,
-    "python.formatting.autopep8Args": [
-        "--max-line-length=160"
-    ],
-    "python.languageServer": "Pylance",
-    "python.showStartPage": false,
-    "standard.autoFixOnSave": true,
-    "standard.run": "onSave",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.scrollback": 99999,
-    "vim.useSystemClipboard": true,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.restoreWindows": "all",
-    "window.zoomLevel": 0,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 20
+  "files.autoSave": "onFocusChange",
+  "vim.useSystemClipboard": true,
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "node_modules": true
+  },
+  "workbench.tree.indent": 20,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "python.terminal.focusAfterLaunch": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "terminal.integrated.scrollback": 99999,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoFormatStrings": true,
+  "terminal.integrated.showExitAlert": false,
+  "lldb.library": "/Library/Developer/CommandLineTools/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "veracode-scan.SCA Vulnerability.sevFilters": [],
+  "veracode-scan.SCA Vulnerability.usageFilters": [],
+  "veracode-scan.SAST Flaw.sevFilters": [],
+  "veracode-scan.SCA Features.policy": false,
+  "veracode-scan.SAST Features.artifactGlob": ".verascan/*.{jar,js,dll,zip,tar,tar.gz,war,py}",
+  "checkmarxOne.apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2YjViYTAxYi1jYzQ2LTRkMGQtYmRhMS00ODM5YjUyYjQ2MDUifQ.eyJpYXQiOjE3MjQwNTg2NjYsImp0aSI6ImYwOTU4YmYxLTk1NTAtNGVkMi1hNjMwLTJhMGU3YTA3NmRhMCIsImlzcyI6Imh0dHBzOi8vZXUtMi5pYW0uY2hlY2ttYXJ4Lm5ldC9hdXRoL3JlYWxtcy9wb3JzY2hlIiwiYXVkIjoiaHR0cHM6Ly9ldS0yLmlhbS5jaGVja21hcngubmV0L2F1dGgvcmVhbG1zL3BvcnNjaGUiLCJzdWIiOiJhZjc3OGQ0Yy1lOTNkLTQzNzgtOTA3Yy04ZGQyYzE3YTMxYjEiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoiYXN0LWFwcCIsInNlc3Npb25fc3RhdGUiOiIzZDBkZjliNS0zMGUwLTQ4MWItYTcyMy1mZjg4ZDQzYzliY2IiLCJzY29wZSI6Im9mZmxpbmVfYWNjZXNzIiwic2lkIjoiM2QwZGY5YjUtMzBlMC00ODFiLWE3MjMtZmY4OGQ0M2M5YmNiIn0.XyBrwVdOO-jz7usmEn7LZWYXSHxFYjj9twDhkB37dP4",
+  "editor.formatOnSave": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.locator": "js"
 }
