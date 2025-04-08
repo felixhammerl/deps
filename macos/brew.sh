@@ -39,6 +39,7 @@ brew install ballast
 brew install bash
 brew install bruno
 brew install burp-suite
+brew install colima
 brew install coreutils
 brew install curl
 brew install cyberduck
@@ -90,6 +91,7 @@ brew install signal
 brew install spotify
 brew install sublime-text
 brew install tcpdump
+brew install terraform
 brew install terraform-ls
 brew install tfenv
 brew install tty-share

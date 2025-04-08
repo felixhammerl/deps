@@ -2,14 +2,6 @@
 
 echo "Installing python dependencies..."
 
-pyenv install 3.8.14
-pyenv install 3.10.7
-
-pyenv global 3.8.14
-
-eval "$(pyenv init --path)"
-pip install --upgrade pip pipenv virtualenv
-
 cat >> ~/.zshrc <<HERE
 
 #
@@ -23,6 +15,26 @@ export PATH="\$HOME/.local/bin:\$PATH"
 eval "\$(pyenv init --path)"
 
 HERE
+
+eval "$(pyenv init --path)"
+
+pyenv install 3.10
+pyenv install 3.11
+pyenv install 3.12
+pyenv install 3.13
+
+pyenv global 3.12
+
+pip install --upgrade pip pipenv virtualenv
+
+echo "Installing poetry..."
+
+curl -sSL https://install.python-poetry.org | python3 -
+
+poetry self add poetry-plugin-export
+poetry self add poetry-plugin-shell
+poetry self add poetry-plugin-up
+poetry self update
 
 echo "Done!"
 

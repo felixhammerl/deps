@@ -26,8 +26,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
-Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'github/copilot.vim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'habamax/vim-asciidoctor'
@@ -142,15 +142,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-" Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 " closetags and delimitmate
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
@@ -176,12 +167,12 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-b> :NERDTreeFind<CR>
 
 let g:coc_global_extensions = [
-	\ 'coc-css',
-	\ 'coc-pyright',
-	\ 'coc-html',
-	\ 'coc-json',
-	\ 'coc-tsserver',
-	\ 'coc-snippets'
+  \ 'coc-css',
+  \ 'coc-pyright',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-snippets'
 \ ]
 
 lua << EOF
