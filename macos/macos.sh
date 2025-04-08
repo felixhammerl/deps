@@ -4,7 +4,7 @@ set -eu
 
 echo "Preparing macOS..."
 
-if ! command -v git >/dev/null 2>&1; then
+if command -v git >/dev/null 2>&1; then
     echo "Installing Xcode command line tools..."
     xcode-select --install
     echo "Press enter to continue when Xcode is done installing..."
