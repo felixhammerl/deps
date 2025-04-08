@@ -16,7 +16,7 @@ else
 fi
 
 "$DIR"/macos.sh
-"$DIR"/brew.sh
+("$DIR"/brew.sh)
 ("$DIR"/shell.sh)
 (source "$HOME/.zshrc" && "$DIR"/ssh.sh)
 (source "$HOME/.zshrc" && "$DIR"/direnv.sh)

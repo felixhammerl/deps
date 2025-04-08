@@ -17,7 +17,9 @@ mkdir -p ~/.config/coc/ultisnips/
 # echo "Setting up neovim..."
 cp init.vim ~/.config/nvim/init.vim
 cp coc-settings.json ~/.config/nvim/coc-settings.json
-cp python.snippets ~/.config/coc/ultisnips/python.snippets
+touch ~/.config/coc/ultisnips/python.snippets
+touch ~/.config/coc/ultisnips/javascipt.snippets
+touch ~/.config/coc/ultisnips/typescript.snippets
 
 # echo "Replacing vim with neovim"
 sudo ln -sf /opt/homebrew/bin/nvim /usr/local/bin/vi

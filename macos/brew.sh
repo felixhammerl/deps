@@ -1,12 +1,22 @@
 #!/usr/bin/env zsh
 
-# echo "Uninstalling old version ..."
+echo "Uninstalling old version ..."
  
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 
-# echo "Installing brew..."
+echo "Installing brew..."
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+brew update
+
+echo "Installing curl and oh-my-zsh"
+brew install curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+echo "Configuring brew ..."
 
 cat >> ~/.zshrc <<HERE
 
@@ -20,13 +30,9 @@ eval "\$(/opt/homebrew/bin/brew shellenv)"
 
 HERE
 
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 echo "Tapping new kegs ..."
 
 brew tap mongodb/brew
-brew update
 
 echo "Installing applications and dependencies..."
 
@@ -41,7 +47,6 @@ brew install bruno
 brew install burp-suite
 brew install colima
 brew install coreutils
-brew install curl
 brew install cyberduck
 brew install direnv
 brew install docker
@@ -130,8 +135,5 @@ $(brew --prefix)/opt/fzf/install
 echo "Installing nvm..."
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-
-echo "Installing oh-my-zsh..."
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 echo "Done!"
