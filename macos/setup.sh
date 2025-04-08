@@ -29,5 +29,5 @@ fi
 (source "$HOME/.zshrc" && "$DIR"/ruby.sh)
 (source "$HOME/.zshrc" && "$DIR"/rust.sh)
 (source "$HOME/.zshrc" && "$DIR"/vscode.sh)
-(source "$HOME/.zshrc" && "$DIR"/container.sh)
+(source "$HOME/.zshrc" && "$DIR"/terraform.sh)
 

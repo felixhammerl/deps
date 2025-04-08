@@ -96,9 +96,8 @@ brew install signal
 brew install spotify
 brew install sublime-text
 brew install tcpdump
-brew install terraform
-brew install terraform-ls
 brew install tfenv
+brew install terraform-ls
 brew install tty-share
 brew install utm
 brew install visual-studio-code
