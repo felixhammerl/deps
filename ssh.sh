@@ -4,6 +4,7 @@ echo "Configuring ssh ..."
 
 mkdir -p ~/.ssh
 touch ~/.ssh/authorized_keys
+
 cd ~/.ssh
 
 cat >> ~/.zshrc <<HERE
@@ -62,7 +63,7 @@ then
   ssh-keygen -K
 fi
 
-for key_name in *.pub; do
+for key_name in $(find . -maxdepth 1 -name '*.pub' | sed 's|^\./||'); do
   cat "$key_name" >> ~/.ssh/allowed_signers
   echo "ssh-add \"\$HOME/.ssh/$key_name\"" >> ~/.zshrc
 done
