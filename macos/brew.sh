@@ -8,13 +8,10 @@ echo "Installing brew..."
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
-
-echo "Installing curl and oh-my-zsh"
-brew install curl
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 echo "Configuring brew ..."
 
