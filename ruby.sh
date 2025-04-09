@@ -2,8 +2,7 @@
 
 echo "Configuring rbenv ..."
 
-rm ~/.zprofile # annoyingly, rbenv adds this to the profile, when PATH is not properly set yet
-rbenv init
+rm -f ~/.zprofile # annoyingly, rbenv adds this to the profile, when PATH is not properly set yet
 
 cat >> ~/.zshrc <<HERE
 
