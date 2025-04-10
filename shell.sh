@@ -14,6 +14,7 @@ cat >> ~/.zshrc <<HERE
 # 
 
 alias ls='ls -lGFh'
+ZSH_THEME="rkj-repos"
 
 HERE
 
