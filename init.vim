@@ -34,6 +34,16 @@ Plug 'habamax/vim-asciidoctor'
 
 call plug#end()
 
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-pyright',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+	\ 'coc-snippets',
+  \ 'coc-prettier'
+\ ]
+
 set encoding=UTF-8
 
 " Sets the leader key
@@ -165,15 +175,6 @@ let NERDTreeShowHidden=1
 nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-b> :NERDTreeFind<CR>
-
-let g:coc_global_extensions = [
-  \ 'coc-css',
-  \ 'coc-pyright',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-tsserver',
-  \ 'coc-snippets'
-\ ]
 
 lua << EOF
 require("CopilotChat").setup {

@@ -16,6 +16,8 @@ eval "\$(pyenv init --path)"
 
 HERE
 
+source "$HOME/.zshrc"
+
 eval "$(pyenv init --path)"
 
 pyenv install 3.10

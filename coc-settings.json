@@ -4,6 +4,12 @@
   "pyright.testing.provider": "pytest",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": ".venv/bin/black",
-  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "coc.preferences.formatOnSave": true
 }
