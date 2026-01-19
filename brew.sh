@@ -32,6 +32,7 @@ echo "Tapping new kegs ..."
 
 echo "Installing applications and dependencies..."
 
+brew install --force openssl@1.1
 brew install 1password
 brew install 1password-cli
 brew install ack
@@ -72,6 +73,7 @@ brew install lsusb
 brew install mullvadvpn
 brew install neovim
 brew install nmap
+brew install openssl
 brew install perl
 brew install pinentry-mac
 brew install pv
@@ -83,9 +85,10 @@ brew install shellcheck
 brew install signal
 brew install spotify
 brew install sublime-text
+brew install tcl-tk
 brew install tcpdump
-brew install tfenv
 brew install terraform-ls
+brew install tfenv
 brew install utm
 brew install visual-studio-code
 brew install vlc
