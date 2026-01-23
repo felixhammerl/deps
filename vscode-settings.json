@@ -1,0 +1,80 @@
+{
+  "files.autoSave": "onFocusChange",
+  "vim.useSystemClipboard": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+  },
+  "workbench.tree.indent": 20,
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  },
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "python.terminal.focusAfterLaunch": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "terminal.integrated.scrollback": 99999,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoFormatStrings": true,
+  "terminal.integrated.showExitAlert": false,
+  "lldb.library": "/Library/Developer/CommandLineTools/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "python.locator": "js",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true,
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Mono",
+  "python.analysis.typeCheckingMode": "standard",
+  "docker.extension.enableComposeLanguageServer": false,
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "mdb.mcp.server": "prompt",
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true,
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "terminal.integrated.suggest.inlineSuggestion": "alwaysOnTopExceptExactMatch",
+  "terminal.integrated.suggest.enabled": false,
+}
+

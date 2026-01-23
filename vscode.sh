@@ -8,6 +8,8 @@ sudo rm -f /usr/local/bin/code
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 mkdir -p $HOME/.config/Code/User/snippets
+mkdir -p $HOME/Library/Application\ Support/Code/User
+cp vscode-settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
 code --install-extension 42crunch.vscode-openapi
 code --install-extension aaron-bond.better-comments
