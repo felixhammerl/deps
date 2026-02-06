@@ -73,6 +73,7 @@ brew install lsusb
 brew install mullvadvpn
 brew install neovim
 brew install nmap
+brew install openssh
 brew install openssl
 brew install perl
 brew install pinentry-mac
@@ -83,6 +84,7 @@ brew install rbenv
 brew install ruby
 brew install shellcheck
 brew install signal
+brew install sops
 brew install spotify
 brew install sublime-text
 brew install tcl-tk
