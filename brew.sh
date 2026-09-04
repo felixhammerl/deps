@@ -47,6 +47,7 @@ brew install cyberduck
 brew install direnv
 brew install docker
 brew install docker-compose
+brew install docker-credential-helper
 brew install dropbox
 brew install editorconfig
 brew install firefox
@@ -80,6 +81,7 @@ brew install pinentry-mac
 brew install pv
 brew install pyenv
 brew install rancher
+brew install ripgrep
 brew install rbenv
 brew install ruby
 brew install shellcheck

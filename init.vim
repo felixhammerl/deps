@@ -15,8 +15,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -31,6 +29,9 @@ Plug 'github/copilot.vim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'habamax/vim-asciidoctor'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' }
 
 call plug#end()
 
@@ -159,15 +160,12 @@ let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx'
 au FileType xml,html,phtml,php,xhtml,js,python let b:delimitMate_matchpairs = "(:),[:],{:},<:>"
 
-" fzf
-let g:fzf_history_dir = '~/.local/share/fzf-history'
-let g:fzf_layout = { 'down': '~40%' }
-let g:fzf_buffers_jump = 1
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-i': 'split',
-  \ 'ctrl-s': 'vsplit' }
-silent! nmap <C-P> :Files<CR>
+" Telescope
+" Using :Telescope command
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " NERD Tree
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '.DS_Store', '\.git$', '__pycache__$', '\.pytest_cache$']
